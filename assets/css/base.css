@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;700;800&display=swap");
+
+:root {
+	--primary-color: #166c9d;
+	--accent-light-color: #c9d6ff;
+	--accent-dark-color: #166c9d;
+	--accent-color: #d9a7c7;
+	--background-color: #f8f6e7;
+	--white-color: #fff;
+	--text-color: #000;
+	--header-height: 100px;
+	--border: 3px solid var(--accent-dark-color);
+}
+html {
+	/* 1rem = 10px */
+	font-size: 62.5%;
+	line-height: 1.6rem;
+	font-family: "Catamaran", sans-serif;
+	box-sizing: border-box;
+	background: rgb(248, 246, 231);
+	background: linear-gradient(
+		90deg,
+		rgba(248, 246, 231, 1) 2%,
+		rgba(63, 153, 204, 0.3) 47%,
+		rgba(220, 175, 202, 0.6) 74%,
+		rgba(248, 246, 231, 0.7) 97%
+	);
+}
+
+/* Responsive */
+.grid {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.grid__full-width {
+	width: 100%;
+}
+
+.grid__row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/* Test */
+.grid__column-2 {
+	width: 20%;
+}
+
+.grid__column-3 {
+	width: 30%;
+}
+
+.grid__column-4 {
+	width: 40%;
+}
+
+.grid__column-6 {
+	width: 60%;
+}
+
+.grid__column-2-4 {
+	padding-left: 6px;
+	padding-right: 6px;
+	width: 20%;
+}
+
+.grid__column-7 {
+	width: 70%;
+}
+
+/* News */
+
+.main__news {
+	width: 100%;
+}
+
+.main__news-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main__news-title {
+	color: var(--primary-color);
+	font-size: 4rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 80px;
+}
+
+.main__news-seeall {
+	text-decoration: none;
+	color: var(--primary-color);
+	margin: auto 0;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+/* Button CSS */
+
+.button {
+	min-height: 44px;
+	min-width: 290px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	border: var(--border);
+	cursor: pointer;
+}
+
+.button--primary {
+	cursor: pointer;
+	min-height: 44px;
+	min-width: 290px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	border: var(--border);
+}

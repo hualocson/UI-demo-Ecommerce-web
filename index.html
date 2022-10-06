@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Final Web</title>
+		<link rel="stylesheet" href="/assets/css/base.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./assets/fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<my-header></my-header>
+		<!-- <div class="header">
+			<div class="grid__full-width">
+				<div class="grid__row">
+					<div class="grid__column-2">
+						<div class="header-shop-name">NDCS.STORE</div>
+					</div>
+					<div class="grid__column-6">
+						<div class="header__search">
+							<i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+							<input
+								type="text"
+								placeholder="search"
+								class="header__search-bar"
+							/>
+						</div>
+						<ul class="header__option-list">
+							<li class="header__option-item">
+								<a href="" class="header__option-item-link">payment</a>
+							</li>
+							<li class="header__option-item">
+								<a href="" class="header__option-item-link">delivery</a>
+							</li>
+							<li class="header__option-item">
+								<a href="" class="header__option-item-link">for business</a>
+							</li>
+							<li class="header__option-item">
+								<a href="" class="header__option-item-link">contacts</a>
+							</li>
+						</ul>
+					</div>
+					<div class="grid__column-2">
+						<div class="header__info">
+							<ul class="header__info-list">
+								<li class="header__info-item">
+									eng/$
+									<i class="fa-solid fa-chevron-down header__info-icon"></i>
+								</li>
+								<li class="header__info-item">profile</li>
+								<li class="header__info-item">
+									<a href="" class="header__info-item-link">
+										<i class="fa-solid fa-cart-shopping header__info-icon"></i>
+										<span>Cart</span>
+									</a>
+								</li>
+							</ul>
+							<div class="header__contact">
+								<div class="header__contact-location">
+									<i class="fa-solid fa-map-pin"></i>
+									<span>Viet Nam</span>
+								</div>
+								<div class="header__contact-phonenumber">+84 0938777182</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="main">
+			<div class="main__catalog">
+				<div class="grid__full-width">
+					<div class="grid__row">
+						<div class="grid__column-2">
+							<div class="main_catalog-navbar">
+								<ul class="main__catalog-list">
+									<li class="main__catalog-item">
+										<a href="#" class="main__catalog-link">catalog</a>
+									</li>
+									<li class="main__catalog-item">
+										<a href="#" class="main__catalog-link">books</a>
+									</li>
+									<li class="main__catalog-item">
+										<a href="#" class="main__catalog-link">audio & books</a>
+									</li>
+									<li class="main__catalog-item">
+										<a href="#" class="main__catalog-link">books sets</a>
+									</li>
+									<li class="main__catalog-item">
+										<a href="#" class="main__catalog-link">authors</a>
+									</li>
+									<li class="main__catalog-item">
+										<a href="#" class="main__catalog-link">present</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="grid__column-7">
+							<div class="main__news">
+								<div class="main__news-header">
+									<h2 class="main__news-title">New arivals</h2>
+									<a href="" class="main__news-seeall">see all</a>
+								</div>
+								<div class="main__news-slider">
+									<div class="slider">
+										<div class="slides">
+											<!--radio buttons start-->
+											<input type="radio" name="radio-btn" id="radio1" />
+											<input type="radio" name="radio-btn" id="radio2" />
+											<input type="radio" name="radio-btn" id="radio3" />
+											<input type="radio" name="radio-btn" id="radio4" />
+											<!--radio buttons end-->
+											<!--slide images start-->
+											<div class="slide first">
+												<img src="/assets/img/1.jpg" alt="" />
+											</div>
+											<div class="slide">
+												<img src="/assets/img/2.jpg" alt="" />
+											</div>
+											<div class="slide">
+												<img src="/assets/img/3.jpg" alt="" />
+											</div>
+											<div class="slide">
+												<img src="/assets/img/4.jpg" alt="" />
+											</div>
+											<!--slide images end-->
+										</div>
+										<!--manual navigation start-->
+										<div class="navigation-manual">
+											<label for="radio1" class="manual-btn"></label>
+											<label for="radio2" class="manual-btn"></label>
+											<label for="radio3" class="manual-btn"></label>
+											<label for="radio4" class="manual-btn"></label>
+										</div>
+										<!--manual navigation end-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__blog">
+				<div class="grid__full-width">
+					<div class="grid__row">
+						<div class="main__blog-container">
+							<div class="main__blog-discover">
+								<div class="main__blog-discover-main">
+									<h2 class="discover__header">
+										Discover a community of book lovers
+									</h2>
+									<h3 class="discover__title">Book of the the month</h3>
+									<img
+										src="/assets/img/bookofthemonth.jpg"
+										alt=""
+										class="discover__img"
+									/>
+									<h2 class="discover__img-title">The Thursday Muder Club</h2>
+									<p class="discover__paragraph">Richard Osman</p>
+									<div class="discover__button">
+										<button class="button--primary">JOIN OUR BOOK CLUB</button>
+									</div>
+								</div>
+							</div>
+							<div class="main__blog-content">
+								<h2 class="blog__content-title">Blog</h2>
+								<ul class="blog__content-list">
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											top 10 best audio books for driving car
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											new sci-pop that will surprise you
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											what to read to improve mental health
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											top 10 best audio books for driving car
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											new sci-pop that will surprise you
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											what to read to improve mental health
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											top 10 best audio books for driving car
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<a href="" class="blog__content-link">
+											new sci-pop that will surprise you
+										</a>
+									</li>
+									<li class="blog__content-item">
+										<button class="button blog__content-button">MORE</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__read">
+				<div class="main__read-title">Don't know what to read?</div>
+				<div class="main__read-box">
+					<div class="main__read-mini-box">
+						<button class="button main__read-button">
+							<span>Top Books 2021</span>
+						</button>
+					</div>
+				</div>
+				<div class="main__read-box">
+					<div class="main__read-mini-box">
+						<button class="button main__read-button">
+							<span>All time best sellers</span>
+						</button>
+					</div>
+				</div>
+				<div class="main__read-box">
+					<div class="main__read-mini-box">
+						<button class="button main__read-button">
+							<span>Immortal classics</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="main__discount">
+				<div class="main__discount-box">
+					<h2 class="main__discount-title">
+						Do you want to receive discounts on every purchase?
+					</h2>
+					<p class="main__discount-text">Quick registration is hear</p>
+					<div class="main__discount-listinput">
+						<div class="main__discount-input">
+							<div class="main__input-title">Name</div>
+							<input type="text" class="main__input-box" />
+						</div>
+						<div class="main__discount-input">
+							<div class="main__input-title">Email</div>
+							<input type="email" class="main__input-box" />
+						</div>
+					</div>
+					<button class="button--primary main__discount-button">
+						Register
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- <footer class="footer">
+			<div class="footer__head">
+				<div class="grid__full-width">
+					<div class="grid__row">
+						<div class="grid__column-3 footer__object">
+							<h3 class="footer__heading">Stay Connected</h3>
+							<div class="footer__endtext">
+								Keep up on the best new books, timely features, and special
+								offers
+							</div>
+							<div class="footer__contact">
+								<div class="footer__contact-title">Email</div>
+								<div class="footer__contact-type">
+									<input type="email" class="footer__contact-email" />
+									<input type="submit" class="footer__contact-submit" />
+								</div>
+							</div>
+						</div>
+						<div class="grid__column-2 footer__object">
+							<h3 class="footer__heading">Help</h3>
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Contact Us</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Help Topics</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Guarantee</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Shipping</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Terms</a>
+								</li>
+							</ul>
+						</div>
+						<div class="grid__column-2 footer__object">
+							<h3 class="footer__heading">Explore</h3>
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Catalog</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">About Us</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Carees</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Gift Cards</a>
+								</li>
+							</ul>
+						</div>
+						<div class="grid__column-2 footer__object">
+							<h3 class="footer__heading">Account</h3>
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a href="" class="footer-item__link">My Account</a>
+								</li>
+								<li class="footer-item">
+									<a href="" class="footer-item__link">Wish List</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer> -->
+		<my-footer></my-footer>
+		<script src="./scripts/load_html.js"></script>
+	</body>
+</html>
