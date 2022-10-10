@@ -5,6 +5,7 @@
 	--accent-light-color: #c9d6ff;
 	--accent-dark-color: #166c9d;
 	--accent-color: #d9a7c7;
+	--danger-color: #DD5353;
 	--background-color: #f8f6e7;
 	--white-color: #fff;
 	--text-color: #000;
@@ -58,9 +59,6 @@ html {
 	width: 40%;
 }
 
-.grid__column-5 {
-	width: 50%;
-}
 .grid__column-6 {
 	width: 60%;
 }
@@ -188,3 +186,11 @@ html {
 		0 0 10px 10px rgba(22, 108, 157, 0.4);
 }
 /* end button */
+
+/* ====== css for typography ======*/
+.thin--text {
+	font-weight: 400;
+}
+.strong--text {
+	font-weight: 800;
+}

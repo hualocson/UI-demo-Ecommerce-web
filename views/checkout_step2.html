@@ -22,8 +22,8 @@
 					<div class="checkout--body">
 						<div class="checkout--step_progress_bar">
 							<ul class="progressbar">
-								<li class="active">information</li>
-								<li>delivery</li>
+								<li>information</li>
+								<li class="active">delivery</li>
 								<li>payment</li>
 							</ul>
 						</div>
@@ -36,49 +36,17 @@
 									id="form--checkout"
 								>
 									<div class="form--header">
-										<span class="strong--text">New customer</span> / regular
-										customer
+										<span class="strong--text">Delivery to HCM, Vietnam</span>
 									</div>
-									<div class="form--checkout-group">
-										<label for="name_and_surname" class="form--checkout-label"
-											>1. name and surname</label
-										>
-										<input
-											type="text"
-											id="name_and_surname"
-											placeholder="Your name"
-											class="form--checkout-textbox"
-										/>
-										<span class="form--checkout-message"></span>
-									</div>
-									<div class="form--checkout-group">
-										<label for="phone_number" class="form--checkout-label"
-											>2. phone number</label
-										>
-										<div class="dropdown">
-											<div class="dropdown-select dropdown-select__phonenumber">
-												<span class="select">+84</span>
-												<i class="fa fa-caret-down icon"></i>
-											</div>
-											<div class="dropdown-list">
-												<div class="dropdown-list__item">+340</div>
-												<div class="dropdown-list__item">+551</div>
-												<div class="dropdown-list__item">+84</div>
-											</div>
+									<div class="form--checkout-group invalid">
+										<div class="form--checkout-label checkout-deli">
+											1. please choose a shipping method
 										</div>
-										<input
-											type="text"
-											id="phone_number"
-											placeholder="357416074"
-											class="form--checkout-textbox"
-										/>
-										<span class="form--checkout-message"></span>
-									</div>
-									<div class="form--checkout-group">
-										<div class="form--checkout-label">3. country</div>
 										<div class="dropdown">
-											<div class="dropdown-select dropdown-select__country">
-												<span class="select">Viet Nam</span>
+											<div
+												class="dropdown-select dropdown-select__shippingmethod"
+											>
+												<span class="select">NovaPoshta</span>
 												<i class="fa fa-caret-down icon"></i>
 											</div>
 											<div class="dropdown-list">
@@ -87,62 +55,47 @@
 												<div class="dropdown-list__item">Singapore</div>
 											</div>
 										</div>
-										<div class="form--checkout-label city">city</div>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message">Invalid message</span>
+									</div>
+									<div class="form--checkout-group valid">
+										<div class="form--checkout-label checkout-deli">
+											2. as you prefer?
+										</div>
 										<div class="dropdown">
-											<div class="dropdown-select dropdown-select__city">
-												<span class="select">Vung Tau</span>
+											<div
+												class="dropdown-select dropdown-select__shippingmethod"
+											>
+												<span class="select">department</span>
 												<i class="fa fa-caret-down icon"></i>
 											</div>
 											<div class="dropdown-list">
-												<div class="dropdown-list__item">HCM</div>
-												<div class="dropdown-list__item">Da Nang</div>
-												<div class="dropdown-list__item">Vung Tau</div>
+												<div class="dropdown-list__item">post office</div>
+												<div class="dropdown-list__item">department</div>
 											</div>
 										</div>
+										<span class="form--checkout-status"></span>
 										<span class="form--checkout-message"></span>
 									</div>
 									<div class="form--checkout-group">
-										<label for="email" class="form--checkout-label"
-											>4. e-mail</label
+										<label for="address" class="form--checkout-label checkout-deli"
+											>3. department address</label
 										>
 										<input
-											type="email"
-											id="email"
-											placeholder="email@gmail.com"
+											type="text"
+											id="address"
+											placeholder="Your address"
 											class="form--checkout-textbox"
 										/>
-										<span class="form--checkout-message"></span>
-									</div>
-									<div class="form--checkout-group">
-										<input
-											type="checkbox"
-											id="loyalty"
-											placeholder="email@gmail.com"
-											class="form--checkout-checkbox"
-										/>
-										<label for="loyalty" class="form--checkout-label"
-											>I want to be a part of the loyalty system</label
-										>
-										<span class="form--checkout-message"></span>
-									</div>
-									<div class="form--checkout-group">
-										<input
-											type="checkbox"
-											id="docallback"
-											placeholder="email@gmail.com"
-											class="form--checkout-checkbox"
-										/>
-										<label for="docallback" class="form--checkout-label"
-											>Please, don't call me back</label
-										>
+										<span class="form--checkout-status"></span>
 										<span class="form--checkout-message"></span>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="checkout--button">
-							<a href="../index.html" class="button--outline_round">Back</a>
-							<a href="./checkout_step2.html" class="button--rounded">Next Step</a>
+							<a href="./checkout.html" class="button--outline_round">Back</a>
+							<a href="#" class="button--rounded">Next Step</a>
 						</div>
 					</div>
 				</div>
