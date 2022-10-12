@@ -933,3 +933,63 @@ section.checkout {
 .order--details .amount .total--amount {
 	font-size: 2rem;
 }
+
+
+/* Catalog CSS */
+
+.catalog__container{
+	margin-bottom: 100px;
+}
+
+.catalog-navigation{
+}
+
+.catalog-navigation-list {
+	list-style: none;
+	border-bottom: var(--border);
+	margin: 0;
+	padding: 0;
+	border-right: var(--border);
+}
+
+.catalog-navigation-item {
+	padding: 20px 0 20px 80px;
+	border-bottom: var(--border);
+	font-size: 1.6rem;
+}
+
+
+.catalog-navigation-item:last-child {
+	border-bottom: none;
+}
+
+.catalog-navigation-link {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-size: 1.6rem;
+	margin: 0 auto;
+}
+
+.catalog-book-maintype-list{
+	margin: 12px 0 0 0;
+	padding: 0;
+	color: var(--primary-color);
+}
+
+.catalog-book-maintype-item{
+	margin: 4px 0;
+}
+
+.fiction-form{
+	display: none;
+}
+
+.non-fiction-form{
+	display: none;
+}
+
+.children-form{
+	display: none;
+}
+
+
