@@ -77,10 +77,6 @@ html {
 	width: 70%;
 }
 
-.border-bottom {
-	border-bottom: var(--border);
-}
-
 /* Grid Default */
 
 .grid__row-df {

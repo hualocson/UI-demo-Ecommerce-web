@@ -221,17 +221,27 @@
 
 .main__catalog-list {
 	list-style: none;
-	border-bottom: var(--border);
 	margin: 0;
 	padding: 0;
 }
 
 .main__catalog-item {
-	padding: 20px 0 20px 80px;
-	border-bottom: var(--border);
 	font-size: 1.6rem;
+	margin-top: -.3rem;
+	padding-left: 8rem;
 }
-
+.main__catalog-item:not(.main__catalog-item:last-child) a {
+	display: block;
+	padding: 2rem 0 2rem 0;
+	border-bottom: var(--border);
+}
+.main__catalog-item:last-child a {
+	display: block;
+	padding: 2rem 0 2rem 0;
+}
+.main__catalog-item:last-child {
+	border-bottom: var(--border);
+}
 .main__catalog-item:hover {
 	background-color: var(--primary-color);
 }
@@ -239,11 +249,6 @@
 .main__catalog-item:hover .main__catalog-link {
 	color: var(--white-color);
 }
-
-.main__catalog-item:last-child {
-	border-bottom: none;
-}
-
 .main__catalog-link {
 	color: var(--primary-color);
 	text-decoration: none;
@@ -507,6 +512,9 @@
 	text-align: center;
 	padding: 10px 30px;
 	background: var(--background-color);
+	color: var(--primary-color);
+	outline: none;
+	border: var(--border);
 }
 
 .main__read-button span {
@@ -1177,6 +1185,9 @@ section.checkout {
 	margin: 4px 0;
 }
 
+.catalog-book-maintype-item .catalog-book-maintype-title {
+	border-bottom: var(--border-thin);
+}
 .fiction-form {
 	display: none;
 }
