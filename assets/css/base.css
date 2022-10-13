@@ -5,7 +5,7 @@
 	--accent-light-color: #c9d6ff;
 	--accent-dark-color: #166c9d;
 	--accent-color: #d9a7c7;
-	--danger-color: #DD5353;
+	--danger-color: #dd5353;
 	--background-color: #f8f6e7;
 	--white-color: #fff;
 	--text-color: #000;
@@ -67,8 +67,6 @@ html {
 	width: 60%;
 }
 
-
-
 .grid__column-2-4 {
 	padding-left: 6px;
 	padding-right: 6px;
@@ -79,35 +77,34 @@ html {
 	width: 70%;
 }
 
-
-.border-bottom{
+.border-bottom {
 	border-bottom: var(--border);
 }
 
 /* Grid Default */
 
 .grid__row-df {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.grid__column-2-df{
-    width: 16.667%;
+.grid__column-2-df {
+	width: 16.667%;
 }
 
-.grid__column-2-4-df{
-    padding-left: 6px;
-    padding-right: 6px;
-    width: 20%;
+.grid__column-2-4-df {
+	width: 25%;
 }
 
+.grid__column-8-df {
+	width: 66.67%;
+}
 
-.grid__column-10-df{
-    width: 83.334%;
+.grid__column-10-df {
+	width: 83.334%;
 }
 
 /* End Grid Default */
-
 
 /* News */
 
@@ -231,6 +228,10 @@ html {
 	font-weight: 800;
 }
 
-.catalog-book-maintype-title{
+.catalog-book-maintype-title {
 	cursor: pointer;
+}
+
+.translateX-10rem {
+	transform: translateX(10rem);
 }
