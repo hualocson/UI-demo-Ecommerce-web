@@ -67,6 +67,8 @@ html {
 	width: 60%;
 }
 
+
+
 .grid__column-2-4 {
 	padding-left: 6px;
 	padding-right: 6px;
@@ -76,6 +78,36 @@ html {
 .grid__column-7 {
 	width: 70%;
 }
+
+
+.border-bottom{
+	border-bottom: var(--border);
+}
+
+/* Grid Default */
+
+.grid__row-df {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__column-2-df{
+    width: 16.667%;
+}
+
+.grid__column-2-4-df{
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 20%;
+}
+
+
+.grid__column-10-df{
+    width: 83.334%;
+}
+
+/* End Grid Default */
+
 
 /* News */
 
@@ -197,4 +229,8 @@ html {
 }
 .strong--text {
 	font-weight: 800;
+}
+
+.catalog-book-maintype-title{
+	cursor: pointer;
 }
