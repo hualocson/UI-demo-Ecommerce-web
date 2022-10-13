@@ -1,292 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<link
 			rel="stylesheet"
 			href="./assets/fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"
 		/>
-		<link rel="stylesheet" href="/assets/css/base.css" />
-		<link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-    <my-header></my-header>
-    <div class="catalog__container">
-        <div class="grid__full-width">
-            <div class="catalog-navigation">
-                <div class="grid__row-df">
-                    <div class="grid__column-2-df">
-                        <ul class="catalog-navigation-list">
-                            <li class="catalog-navigation-item">
-                                <a href="" class="catalog-navigation-link">
-                                    catalog
-                                </a>
-                            </li>
-                            <li class="catalog-navigation-item">
-                                <a href="" class="catalog-navigation-link border-bottom">
-                                    book
-                                </a>
-                                <ul class="catalog-book-maintype-list">
-                                    <li class="catalog-book-maintype-item">
-                                        <p class="catalog-book-maintype-title" onclick="displayFiction()">fiction</p>
-                                        <form action="" id="fiction-form" class="fiction-form">
-                                            <input type="checkbox" id="fiction1" name="fiction1" value="Action & adventure">
-                                            <label for="fiction1">Action & adventure</label><br>
-                                            <input type="checkbox" id="fiction2" name="fiction2" value="Classics">
-                                            <label for="fiction2">Classics</label><br>
-                                            <input type="checkbox" id="fiction3" name="fiction3" value="Crime, thrillers & mysteries">
-                                            <label for="fiction3">Crime, thrillers & mysteries</label><br>
-                                            <input type="checkbox" id="fiction4" name="fiction4" value="General & literary fiction">
-                                            <label for="fiction4">General & literary fiction</label><br>
-                                            <input type="checkbox" id="fiction5" name="fiction5" value="Graphic novels">
-                                            <label for="fiction5">Graphic novels</label><br>
-                                            <input type="checkbox" id="fiction6" name="fiction6" value="Romance">
-                                            <label for="fiction6">Romance</label><br>
-                                            <input type="checkbox" id="fiction7" name="fiction7" value="Poetry">
-                                            <label for="fiction7">Poetry</label><br>
-                                            <input type="checkbox" id="fiction8" name="fiction8" value="Horror">
-                                            <label for="fiction8">Horror</label><br>
-                                            <input type="checkbox" id="fiction9" name="fiction9" value="Short stories">
-                                            <label for="fiction9">Short stories</label><br>
-                                          </form>
-                                    </li>
-                                    <li class="catalog-book-maintype-item">
-                                        <p class="catalog-book-maintype-title" onclick="displayNonFiction()">non-fiction</p>
-                                        <form action="" id="non-fiction-form" class="non-fiction-form">
-                                            <input type="checkbox" id="non-fiction1" name="non-fiction1" value="Art, architecture & photography">
-                                            <label for="non-fiction1">Art, architecture & photography</label><br>
-                                            <input type="checkbox" id="non-fiction2" name="non-fiction2" value="Biographies">
-                                            <label for="non-fiction2">Biographies</label><br>
-                                            <input type="checkbox" id="non-fiction3" name="non-fiction3" value="Business, economics & law">
-                                            <label for="non-fiction3">Business, economics & law</label><br>
-                                            <input type="checkbox" id="non-fiction4" name="non-fiction4" value="Food & drink">
-                                            <label for="non-fiction4">Food & drink</label><br>
-                                            <input type="checkbox" id="non-fiction5" name="non-fiction5" value="Health & lifestyle">
-                                            <label for="non-fiction5">Health & lifestyle</label><br>
-                                            <input type="checkbox" id="non-fiction6" name="non-fiction6" value="History">
-                                            <label for="non-fiction6">History</label><br>
-                                            <input type="checkbox" id="non-fiction7" name="non-fiction7" value="Politics, philosophy & culture">
-                                            <label for="non-fiction7">Politics, philosophy & culture</label><br>
-                                            <input type="checkbox" id="non-fiction8" name="non-fiction8" value="Science & nature">
-                                            <label for="non-fiction8">Science & nature</label><br>
-                                            <input type="checkbox" id="non-fiction9" name="non-fiction9" value="Sports">
-                                            <label for="non-fiction9">Sports</label><br>
-                                          </form>
-                                    </li>
-                                    <li class="catalog-book-maintype-item">
-                                        <p class="catalog-book-maintype-title" onclick="displayChildren()">Children's</p>
-                                        <form action="" id="children-form" class="children-form">
-                                            <input type="checkbox" id="children1" name="children1" value="0 - 18 months">
-                                            <label for="children1">0 - 18 months</label><br>
-                                            <input type="checkbox" id="children2" name="children2" value="18 months - 3 years">
-                                            <label for="children2">18 months - 3 years</label><br>
-                                            <input type="checkbox" id="children3" name="children3" value="3 - 5 years">
-                                            <label for="children3">3 - 5 years</label><br>
-                                            <input type="checkbox" id="children4" name="children4" value="5 - 7 years">
-                                            <label for="children4">5 - 7 years</label><br>
-                                            <input type="checkbox" id="children5" name="children5" value="7 - 9 years">
-                                            <label for="children5">7 - 9 years</label><br>
-                                            <input type="checkbox" id="children6" name="children6" value="9 - 12 years">
-                                            <label for="children6">9 - 12 years</label><br>
-                                          </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-10-df">
-                        <div class="home__filter">
-                            <div class="home__filter-maintype">Fiction</div>
-                        </div>
-                        <div class="home__product">
-                            <div class="grid__row-df">
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__column-2-4-df">
-                                    <div class="home__product-item">
-                                        <div class="home__product-item-img" style="background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);"></div>
-                                        <div class="home__product-item-info">
-                                            <h2 class="home__product-title">One the Beach</h2>
-                                            <div class="home__product-author">Nevil Shute</div>
-                                            <div class="home__product-price">13$</div>
-                                        </div>
-                                        <div class="home__product-item-addbutton">
-                                            <i class="fa-solid fa-plus home-addbutton-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                        <ul class="pagination home__product__pagination">
-                        
-                            <li class="pagination-item pagination-item--active">
-                                <a href="" class="pagination-item__link">1</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">2</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">3</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">...</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">10</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <my-footer></my-footer>
-    <script src="./scripts/load_html.js"></script>
-    <script src="./scripts/catalog.js"></script>
-</body>
+		<link rel="stylesheet" href="./assets/css/base.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<my-header></my-header>
+		<div class="catalog__container">
+			<div class="grid__full-width">
+				<div class="catalog-navigation">
+					<div class="grid__row-df">
+						<div class="grid__column-2-df">
+							<ul class="catalog-navigation-list">
+								<li class="catalog-navigation-item">
+									<a href="" class="catalog-navigation-link"> catalog </a>
+								</li>
+								<li class="catalog-navigation-item">
+									<a href="" class="catalog-navigation-link border-bottom">
+										book
+									</a>
+									<ul class="catalog-book-maintype-list">
+										<li class="catalog-book-maintype-item">
+											<p
+												class="catalog-book-maintype-title"
+												onclick="displayFiction()"
+											>
+												fiction
+											</p>
+											<form action="" id="fiction-form" class="fiction-form">
+												<input
+													type="checkbox"
+													id="fiction1"
+													name="fiction1"
+													value="Action & adventure"
+												/>
+												<label for="fiction1">Action & adventure</label><br />
+												<input
+													type="checkbox"
+													id="fiction2"
+													name="fiction2"
+													value="Classics"
+												/>
+												<label for="fiction2">Classics</label><br />
+												<input
+													type="checkbox"
+													id="fiction3"
+													name="fiction3"
+													value="Crime, thrillers & mysteries"
+												/>
+												<label for="fiction3"
+													>Crime, thrillers & mysteries</label
+												><br />
+												<input
+													type="checkbox"
+													id="fiction4"
+													name="fiction4"
+													value="General & literary fiction"
+												/>
+												<label for="fiction4">General & literary fiction</label
+												><br />
+												<input
+													type="checkbox"
+													id="fiction5"
+													name="fiction5"
+													value="Graphic novels"
+												/>
+												<label for="fiction5">Graphic novels</label><br />
+												<input
+													type="checkbox"
+													id="fiction6"
+													name="fiction6"
+													value="Romance"
+												/>
+												<label for="fiction6">Romance</label><br />
+												<input
+													type="checkbox"
+													id="fiction7"
+													name="fiction7"
+													value="Poetry"
+												/>
+												<label for="fiction7">Poetry</label><br />
+												<input
+													type="checkbox"
+													id="fiction8"
+													name="fiction8"
+													value="Horror"
+												/>
+												<label for="fiction8">Horror</label><br />
+												<input
+													type="checkbox"
+													id="fiction9"
+													name="fiction9"
+													value="Short stories"
+												/>
+												<label for="fiction9">Short stories</label><br />
+											</form>
+										</li>
+										<li class="catalog-book-maintype-item">
+											<p
+												class="catalog-book-maintype-title"
+												onclick="displayNonFiction()"
+											>
+												non-fiction
+											</p>
+											<form
+												action=""
+												id="non-fiction-form"
+												class="non-fiction-form"
+											>
+												<input
+													type="checkbox"
+													id="non-fiction1"
+													name="non-fiction1"
+													value="Art, architecture & photography"
+												/>
+												<label for="non-fiction1"
+													>Art, architecture & photography</label
+												><br />
+												<input
+													type="checkbox"
+													id="non-fiction2"
+													name="non-fiction2"
+													value="Biographies"
+												/>
+												<label for="non-fiction2">Biographies</label><br />
+												<input
+													type="checkbox"
+													id="non-fiction3"
+													name="non-fiction3"
+													value="Business, economics & law"
+												/>
+												<label for="non-fiction3"
+													>Business, economics & law</label
+												><br />
+												<input
+													type="checkbox"
+													id="non-fiction4"
+													name="non-fiction4"
+													value="Food & drink"
+												/>
+												<label for="non-fiction4">Food & drink</label><br />
+												<input
+													type="checkbox"
+													id="non-fiction5"
+													name="non-fiction5"
+													value="Health & lifestyle"
+												/>
+												<label for="non-fiction5">Health & lifestyle</label
+												><br />
+												<input
+													type="checkbox"
+													id="non-fiction6"
+													name="non-fiction6"
+													value="History"
+												/>
+												<label for="non-fiction6">History</label><br />
+												<input
+													type="checkbox"
+													id="non-fiction7"
+													name="non-fiction7"
+													value="Politics, philosophy & culture"
+												/>
+												<label for="non-fiction7"
+													>Politics, philosophy & culture</label
+												><br />
+												<input
+													type="checkbox"
+													id="non-fiction8"
+													name="non-fiction8"
+													value="Science & nature"
+												/>
+												<label for="non-fiction8">Science & nature</label><br />
+												<input
+													type="checkbox"
+													id="non-fiction9"
+													name="non-fiction9"
+													value="Sports"
+												/>
+												<label for="non-fiction9">Sports</label><br />
+											</form>
+										</li>
+										<li class="catalog-book-maintype-item">
+											<p
+												class="catalog-book-maintype-title"
+												onclick="displayChildren()"
+											>
+												Children's
+											</p>
+											<form action="" id="children-form" class="children-form">
+												<input
+													type="checkbox"
+													id="children1"
+													name="children1"
+													value="0 - 18 months"
+												/>
+												<label for="children1">0 - 18 months</label><br />
+												<input
+													type="checkbox"
+													id="children2"
+													name="children2"
+													value="18 months - 3 years"
+												/>
+												<label for="children2">18 months - 3 years</label><br />
+												<input
+													type="checkbox"
+													id="children3"
+													name="children3"
+													value="3 - 5 years"
+												/>
+												<label for="children3">3 - 5 years</label><br />
+												<input
+													type="checkbox"
+													id="children4"
+													name="children4"
+													value="5 - 7 years"
+												/>
+												<label for="children4">5 - 7 years</label><br />
+												<input
+													type="checkbox"
+													id="children5"
+													name="children5"
+													value="7 - 9 years"
+												/>
+												<label for="children5">7 - 9 years</label><br />
+												<input
+													type="checkbox"
+													id="children6"
+													name="children6"
+													value="9 - 12 years"
+												/>
+												<label for="children6">9 - 12 years</label><br />
+											</form>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="grid__column-10-df">
+							<div class="home__filter">
+								<div class="home__filter-maintype">Fiction</div>
+							</div>
+							<div class="home__product">
+								<div class="grid__row-df">
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="grid__column-2-4-df">
+										<div class="home__product-item">
+											<div
+												class="home__product-item-img"
+												style="
+													background-image: url(https://images.ctfassets.net/fxjn30k1sseo/4ntgST90GIxWn9JiCzSY0g/99aaf52cf2fc2f6638591bd817e08a1c/Wob-webcard_template_02-middle_cardBooker__1_.png);
+												"
+											></div>
+											<div class="home__product-item-info">
+												<h2 class="home__product-title">One the Beach</h2>
+												<div class="home__product-author">Nevil Shute</div>
+												<div class="home__product-price">13$</div>
+											</div>
+											<div class="home__product-item-addbutton">
+												<i class="fa-solid fa-plus home-addbutton-icon"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="pagination home__product__pagination">
+								<li class="pagination-item pagination-item--active">
+									<a href="" class="pagination-item__link">1</a>
+								</li>
+								<li class="pagination-item">
+									<a href="" class="pagination-item__link">2</a>
+								</li>
+								<li class="pagination-item">
+									<a href="" class="pagination-item__link">3</a>
+								</li>
+								<li class="pagination-item">
+									<a href="" class="pagination-item__link">...</a>
+								</li>
+								<li class="pagination-item">
+									<a href="" class="pagination-item__link">10</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<my-footer></my-footer>
+		<script src="./scripts/load_html.js"></script>
+		<script src="./scripts/catalog.js"></script>
+	</body>
 </html>
