@@ -958,6 +958,13 @@ section.checkout {
 	font-size: 1.6rem;
 }
 
+.catalog-navigation-item:first-child:hover{
+	background-color: var(--primary-color);
+}
+
+.catalog-navigation-item:first-child:hover .catalog-navigation-link {
+	color: var(--white-color);
+}
 
 .catalog-navigation-item:last-child {
 	border-bottom: none;
@@ -992,4 +999,109 @@ section.checkout {
 	display: none;
 }
 
+/* Home Product */
 
+.home__filter{
+
+}
+
+.home__filter-maintype{
+	color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+
+.home__product{
+	margin: 10px;
+	border: var(--border);
+	background-color: var(--white-color);
+}
+
+.home__product-item{
+	position: relative;
+    background-color: var(--white-color);
+	margin: 10px;
+	border: var(--border);
+}
+
+.home__product-item-info{
+	background-color: var(--primary-color);
+	margin-top: 16px;
+}
+
+.home__product-item-img{
+	margin: 20px;
+	padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.home__product-title{
+	font-size: 1.6rem;
+	color: var(--white-color);
+	padding: 12px;
+}
+
+.home__product-author{
+	font-size: 1.2rem;
+	color: var(--white-color);
+	padding: 12px;
+}
+
+.home__product-price{
+	text-align: right;
+	padding: 12px;
+	font-size: 1.6rem;
+	color: var(--white-color);
+}
+
+.home__product-item-addbutton{
+	cursor: pointer;
+	position: absolute;
+	right: 5%;
+	top: 52%;
+	height: 32px;
+	width: 32px;
+	border: var(--border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--white-color);
+	border-radius: 10px;
+}
+
+.home-addbutton-icon{
+	font-size: 2rem;
+	color: var(--primary-color);
+}
+
+/* Pagination */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+	margin-right: 8px;
+}
+
+.pagination-item{
+    margin: 0 8px;
+}
+
+.pagination-item__link{
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 300;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+}
