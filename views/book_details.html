@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link
+			rel="stylesheet"
+			href="../assets/fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="../assets/css/base.css" />
+		<link rel="stylesheet" href="../assets/css/style.css" />
+	</head>
+	<body>
+		<my-header></my-header>
+		<section class="book--details__section grid">
+			<div class="grid__row">
+				<div class="leftside grid__column-5">
+					<img
+						src="../assets/img/willimg.jpg"
+						alt=""
+						class="book--details__image"
+					/>
+				</div>
+				<div class="rightside grid__column-5">
+					<div class="book--details">
+						<div class="book--details__header">
+							<div class="book-info">
+								<h3 class="book-name">Will</h3>
+								<h4 class="book-auth thin--text">Will Smith, Mark Manson</h4>
+							</div>
+							<span class="book-price">15$</span>
+						</div>
+						<div class="book--details__body">
+							<div class="book--details__tag">
+								<div class="book-tag__name">Book type:</div>
+								<div class="book-tag__value">
+									<div class="tag-item">
+										<input
+											type="radio"
+											id="paper"
+											name="book-type"
+											class="tag-radio"
+											checked
+										/>
+										<label for="paper" class="tag-label"> paper </label>
+									</div>
+									<div class="tag-item">
+										<input
+											type="radio"
+											id="e-book"
+											name="book-type"
+											class="tag-radio"
+										/>
+										<label for="e-book" class="tag-label"> e-book </label>
+									</div>
+									<div class="tag-item">
+										<input
+											type="radio"
+											id="audio_book"
+											name="book-type"
+											class="tag-radio"
+										/>
+										<label for="audio_book" class="tag-label">
+											audio book
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="book--details__tag">
+								<div class="book-tag__name">Book language:</div>
+								<div class="book-tag__value">
+									<div class="tag-item">
+										<input
+											type="radio"
+											id="eng"
+											name="book-language"
+											class="tag-radio"
+										/>
+										<label for="eng" class="tag-label"> eng </label>
+									</div>
+									<div class="tag-item">
+										<input
+											type="radio"
+											id="ukr"
+											name="book-language"
+											class="tag-radio"
+											checked
+										/>
+										<label for="ukr" class="tag-label"> ukr </label>
+									</div>
+									<div class="tag-item">
+										<input
+											type="radio"
+											id="rus"
+											name="book-language"
+											class="tag-radio"
+										/>
+										<label for="rus" class="tag-label"> rus </label>
+									</div>
+								</div>
+							</div>
+							<div class="book--details__addtocart">
+								<div class="book-quantity">
+									<i class="fa-solid fa-minus"></i>
+									<span class="quantity">1</span>
+									<i class="fa-solid fa-plus"></i>
+								</div>
+								<a href="#" class="button--rounded">add to cart</a>
+							</div>
+							<div class="book--details__desccollapse">
+								<div class="desc-collapse_name collapsible">
+									Characteristics
+								</div>
+								<div class="desc-collapse_content thin--text">
+									Some collapsible content. Click the button to toggle between
+									showing and hiding the collapsible content. Lorem ipsum dolor
+									sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris nisi ut
+									aliquip ex ea commodo consequat.
+								</div>
+							</div>
+							<div class="book--details__desccollapse">
+								<div class="desc-collapse_name active">Shipping & returns</div>
+								<div class="desc-collapse_content thin--text">
+									Some collapsible content. Click the button to toggle between
+									showing and hiding the collapsible content. Lorem ipsum dolor
+									sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation ullamco laboris nisi ut
+									aliquip ex ea commodo consequat.
+								</div>
+							</div>
+							<div class="book--details__desccollapse">
+								<div class="desc-collapse_name active">Wholesale</div>
+								<div class="desc-collapse_content thin--text"></div>
+							</div>
+							<div class="book--details__desccollapse">
+								<div class="desc-collapse_name active">Reviews</div>
+								<div class="desc-collapse_content thin--text"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<my-footer></my-footer>
+		<script src="../scripts/load_html.js"></script>
+	</body>
+</html>

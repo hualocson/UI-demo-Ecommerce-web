@@ -605,6 +605,60 @@ section.checkout {
 	align-items: center;
 	position: relative;
 }
+.form--checkout-group .checkout-payment-method {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+.form--checkout-group .checkout-payment-method .radio-item {
+	display: flex;
+	font-size: 1.4rem;
+	flex-direction: column;
+	width: 10rem;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.form--checkout-group .checkout-payment-method .radio-item::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--primary-color);
+	display: none;
+	z-index: 1;
+}
+.form--checkout-group .checkout-payment-method .radio-item:has(input:checked) {
+	background: var(--primary-color);
+	color: var(--background-color);
+}
+.form--checkout-group .checkout-payment-method .radio-item:hover::after {
+	display: inline-block;
+}
+.form--checkout-group .checkout-payment-method .radio-item:hover label,
+.form--checkout-group .checkout-payment-method .radio-item:hover .radio-icon {
+	color: var(--background-color);
+}
+.form--checkout-group .checkout-payment-method .radio-item label {
+	margin: 0;
+	z-index: 10;
+}
+.form--checkout-group .checkout-payment-method .radio-item .radio-icon {
+	font-size: 4rem;
+	z-index: 10;
+}
+.form--checkout-group
+	.checkout-payment-method
+	.radio-item
+	.form--checkout-radio {
+	display: none;
+}
+
 .form--checkout .form--checkout-group .form--checkout-status {
 	position: relative;
 }
@@ -919,12 +973,14 @@ section.checkout {
 .other--fee .fee--card .fee--cost {
 	font-size: 2rem;
 }
+
 .order--details .amount {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 2.8rem;
 }
+
 .order--details .amount .amount--header {
 	font-size: 2.6rem;
 	text-transform: uppercase;
@@ -933,3 +989,132 @@ section.checkout {
 .order--details .amount .total--amount {
 	font-size: 2rem;
 }
+
+/* ======= book details ========= */
+.book--details__section {
+	color: var(--primary-color);
+	margin: 5rem auto;
+}
+.book--details__image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	overflow: hidden;
+}
+.book--details {
+	font-weight: 700;
+	font-size: 1.6rem;
+	margin-left: 8rem;
+	background: var(--background-color);
+	border: var(--border);
+}
+.book--details .book--details__header {
+	padding: 2rem 2rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: var(--border-thin);
+}
+
+.book--details .book--details__header .book-name {
+	font-size: 5rem;
+	font-weight: 500;
+	letter-spacing: 0.5rem;
+}
+.book--details .book--details__header .book-price {
+	font-size: 3rem;
+	font-weight: 600;
+}
+.book--details .book--details__body {
+	font-size: 2rem;
+}
+.book--details__body .book--details__tag {
+	padding: 2rem 2rem 0;
+}
+.book--details__body .book--details__tag:not(.book--details__tag:last-child) {
+	border-bottom: var(--border-thin);
+}
+.book--details__body .book--details__tag .book-tag__name {
+	margin-bottom: 2rem;
+}
+
+.book--details__body .book--details__tag .book-tag__value {
+	margin-bottom: 2rem;
+}
+.book--details__body .book--details__tag .book-tag__value {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.book-tag__value .tag-item .tag-label {
+	padding: 0.2rem 3rem;
+	border-radius: 100rem;
+	border: var(--border-thin);
+	cursor: pointer;
+	background: transparent;
+}
+
+.book-tag__value .tag-item .tag-radio:checked ~ .tag-label {
+	background: var(--primary-color);
+	color: var(--background-color);
+}
+.book-tag__value .tag-item .tag-radio {
+	display: none;
+}
+
+.book--details__body .book--details__addtocart {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	flex: 1 1 30%;
+}
+.book--details__body .book--details__addtocart .book-quantity {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-evenly;
+}
+.book--details__body .book--details__addtocart .button--rounded {
+	flex-grow: 2;
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-left: 2rem;
+}
+
+.book--details__body .book--details__desccollapse {
+	border-top: var(--border-thin);
+	padding: 2rem;
+}
+.book--details__body .book--details__desccollapse .desc-collapse_name {
+	margin-bottom: 1rem;
+}
+.book--details__body .book--details__desccollapse .collapsible::after {
+	content: "\f068";
+	font-size: 3rem;
+	font-family: "Font Awesome 5 free";
+	color: var(--primary-color);
+	float: right;
+	margin-right: 3rem;
+	font-weight: 800;
+	cursor: pointer;
+}
+.book--details__body .book--details__desccollapse .active::after {
+	content: "\2b";
+	font-size: 3rem;
+	font-family: "Font Awesome 5 free";
+	color: var(--primary-color);
+	float: right;
+	margin-right: 3rem;
+	font-weight: 800;
+	cursor: pointer;
+}
+.book--details__body .book--details__desccollapse .desc-collapse_content {
+	max-width: 80%;
+}
+.book--details__body
+	.book--details__desccollapse
+	.active
+	+ .desc-collapse_content {
+	display: none;
+}
+/* ======= end book details ========= */

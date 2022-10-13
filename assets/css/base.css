@@ -59,6 +59,10 @@ html {
 	width: 40%;
 }
 
+.grid__column-5 {
+	width: 50%;
+}
+
 .grid__column-6 {
 	width: 60%;
 }

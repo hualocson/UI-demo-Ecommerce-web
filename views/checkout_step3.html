@@ -23,8 +23,8 @@
 						<div class="checkout--step_progress_bar">
 							<ul class="progressbar">
 								<li>information</li>
-								<li class="active">delivery</li>
-								<li>payment</li>
+								<li>delivery</li>
+								<li class="active">payment</li>
 							</ul>
 						</div>
 						<div class="checkout--body__info">
@@ -36,27 +36,47 @@
 									id="form--checkout"
 								>
 									<div class="form--header">
-										<span class="strong--text">Delivery to HCM, Vietnam</span>
+										<span class="strong--text">Payment</span>
 									</div>
-									<div class="form--checkout-group invalid">
-										<div class="form--checkout-label checkout-deli">
-											1. please choose a shipping method
-										</div>
-										<div class="dropdown">
-											<div
-												class="dropdown-select dropdown-select__shippingmethod"
-											>
-												<span class="select">NovaPoshta</span>
-												<i class="fa fa-caret-down icon"></i>
+									<div class="checkout-payment--header">select method</div>
+									<div class="form--checkout-group">
+										<div class="checkout-payment-method">
+											<div class="radio-item">
+												<i class="fa-brands fa-apple-pay radio-icon"></i>
+												<label for="apple-pay" class="form--checkout-label">
+													apple pay
+												</label>
+												<input
+													type="radio"
+													id="apple-pay"
+													class="form--checkout-radio"
+												/>
 											</div>
-											<div class="dropdown-list">
-												<div class="dropdown-list__item">China</div>
-												<div class="dropdown-list__item">Viet Nam</div>
-												<div class="dropdown-list__item">Singapore</div>
+											<div class="radio-item">
+												<i class="fa-brands fa-apple-pay radio-icon"></i>
+												<label for="google-pay" class="form--checkout-label">
+													apple pay
+												</label>
+												<input
+													type="radio"
+													id="google-pay"
+													class="form--checkout-radio"
+												/>
+											</div>
+											<div class="radio-item">
+												<i class="fa-brands fa-apple-pay radio-icon"></i>
+												<label for="credit-pay" class="form--checkout-label">
+													apple pay
+												</label>
+												<input
+													type="radio"
+													id="credit-pay"
+													class="form--checkout-radio"
+												/>
 											</div>
 										</div>
 										<span class="form--checkout-status"></span>
-										<span class="form--checkout-message">Invalid message</span>
+										<span class="form--checkout-message"></span>
 									</div>
 									<div class="form--checkout-group valid">
 										<div class="form--checkout-label checkout-deli">
@@ -96,10 +116,10 @@
 							</div>
 						</div>
 						<div class="checkout--button">
-							<a href="./checkout.html" class="button--outline_round">Back</a>
-							<a href="./checkout_step3.html" class="button--rounded"
-								>Next Step</a
+							<a href="./checkout_step2.html" class="button--outline_round"
+								>Back</a
 							>
+							<a href="#" class="button--rounded">Next Step</a>
 						</div>
 					</div>
 				</div>
