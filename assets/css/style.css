@@ -1188,17 +1188,7 @@ section.checkout {
 .catalog-book-maintype-item .catalog-book-maintype-title {
 	border-bottom: var(--border-thin);
 }
-.fiction-form {
-	display: none;
-}
 
-.non-fiction-form {
-	display: none;
-}
-
-.children-form {
-	display: none;
-}
 
 /* Home Product */
 
@@ -1226,6 +1216,7 @@ section.checkout {
 
 .home__product-item-info {
 	background-color: var(--primary-color);
+	padding: 12px;
 }
 
 .home__product-item-img {
@@ -1237,24 +1228,34 @@ section.checkout {
 .home__item-img {
 	width: 100%;
 	height: auto;
-	padding-bottom: 2rem;
+/* 	padding-bottom: 2rem; */
 }
 
 .home__product-title {
 	font-size: 1.6rem;
 	color: var(--white-color);
-	padding: 12px;
+	line-height: 2rem;
+	min-height: 4rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
 }
 
 .home__product-author {
 	font-size: 1.2rem;
 	color: var(--white-color);
-	padding: 12px;
+	margin: 12px 0;
+	line-height: 2rem;
+	min-height: 2rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
 }
 
 .home__product-price {
 	text-align: right;
-	padding: 12px;
 	font-size: 1.6rem;
 	color: var(--white-color);
 }
@@ -1263,10 +1264,9 @@ section.checkout {
 	cursor: pointer;
 	position: absolute;
 	right: 3%;
-	top: 65%;
-
-	height: 4rem;
-	width: 4rem;
+	top: 62%;
+    height: 3.4rem;
+    width: 3.4rem;
 	border: var(--border);
 	display: flex;
 	align-items: center;
