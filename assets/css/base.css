@@ -12,12 +12,13 @@
 	--header-height: 100px;
 	--border: 3px solid var(--accent-dark-color);
 	--border-thin: 2px solid var(--accent-dark-color);
+	--font: "Catamaran", sans-serif;
 }
 html {
 	/* 1rem = 10px */
 	font-size: 62.5%;
 	line-height: 1.6rem;
-	font-family: "Catamaran", sans-serif;
+	font-family: var(--font);
 	box-sizing: border-box;
 	background: rgb(248, 246, 231);
 	background: linear-gradient(

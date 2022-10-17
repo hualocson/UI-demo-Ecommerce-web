@@ -606,6 +606,8 @@ section.checkout {
 	align-items: center;
 	position: relative;
 }
+
+
 .form--checkout-group .checkout-payment-method {
 	display: flex;
 	width: 100%;
