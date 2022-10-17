@@ -75,6 +75,7 @@
 													id="credit-pay"
 													name="checkout-payment-method"
 													class="form--checkout-radio"
+													checked
 												/>
 											</div>
 										</div>
@@ -82,34 +83,58 @@
 										<span class="form--checkout-message"></span>
 									</div>
 									<div class="form--checkout-group valid">
-										<div class="form--checkout-label checkout-deli">
-											2. as you prefer?
-										</div>
-										<div class="dropdown">
-											<div
-												class="dropdown-select dropdown-select__shippingmethod"
-											>
-												<span class="select">department</span>
-												<i class="fa fa-caret-down icon"></i>
-											</div>
-											<div class="dropdown-list">
-												<div class="dropdown-list__item">post office</div>
-												<div class="dropdown-list__item">department</div>
-											</div>
-										</div>
+										<label for="card_number" class="form--checkout-label">
+											1. card number
+										</label>
+										<input
+											type="text"
+											id="card_number"
+											placeholder="2222 2222 2222 2222"
+											class="form--checkout-textbox"
+										/>
 										<span class="form--checkout-status"></span>
 										<span class="form--checkout-message"></span>
 									</div>
 									<div class="form--checkout-group">
 										<label
-											for="address"
-											class="form--checkout-label checkout-deli"
-											>3. department address</label
+											for="name_on_card"
+											class="form--checkout-label"
+											>2. name on card</label
 										>
 										<input
 											type="text"
-											id="address"
+											id="name_on_card"
 											placeholder="Your address"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+									<div class="form--checkout-group">
+										<label
+											for="date_of_expire"
+											class="form--checkout-label"
+											>3. date of expire</label
+										>
+										<input
+											type="text"
+											id="date_of_expire"
+											placeholder="06/41"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+									<div class="form--checkout-group">
+										<label
+											for="CVV"
+											class="form--checkout-label"
+											>4. CVV</label
+										>
+										<input
+											type="text"
+											id="CVV"
+											placeholder="111"
 											class="form--checkout-textbox"
 										/>
 										<span class="form--checkout-status"></span>
@@ -122,7 +147,7 @@
 							<a href="./checkout_step2.html" class="button--outline_round"
 								>Back</a
 							>
-							<a href="#" class="button--rounded">Next Step</a>
+							<a href="./thanks.html" class="button--rounded">Pay</a>
 						</div>
 					</div>
 				</div>

@@ -1406,7 +1406,8 @@ section.checkout {
 }
 
 .thanks__button {
-	margin-bottom: 3rem;
+	margin: 3rem 0;
+	min-width: 4rem;
 }
 
 .thanks__heart-icon {

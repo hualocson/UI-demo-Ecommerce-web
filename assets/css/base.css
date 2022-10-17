@@ -193,6 +193,7 @@ html {
 	display: inline-block;
 	padding: 1rem 2rem;
 	height: 2.5rem;
+	min-width: 15rem;
 	line-height: 2.5rem;
 	font-weight: 700;
 	font-size: 1.6rem;
