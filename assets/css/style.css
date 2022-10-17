@@ -209,7 +209,6 @@
 
 .main__catalog {
 	width: 100%;
-	height: 650px;
 	border-bottom: var(--border);
 }
 
@@ -217,6 +216,8 @@
 	height: 650px;
 	border-right: var(--border);
 	background: var(--background-color);
+	margin-bottom: -3px;
+	border-bottom: var(--border);
 }
 
 .main__catalog-list {
@@ -227,7 +228,7 @@
 
 .main__catalog-item {
 	font-size: 1.6rem;
-	margin-top: -.3rem;
+	margin-top: -0.3rem;
 	padding-left: 8rem;
 }
 .main__catalog-item:not(.main__catalog-item:last-child) a {
@@ -414,25 +415,20 @@
 }
 
 .blog__content-list {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 	border: var(--border);
+	width: 40rem;
 	border-radius: 5px;
-	min-height: 580px;
-	width: 360px;
 	background: var(--background-color);
+	display: flex;
+	flex-direction: column;
 }
 
 .blog__content-item {
-	max-height: 54px;
 	display: block;
+	padding: 2rem;
 	border-bottom: var(--border);
-	min-height: 40px;
-}
-
-.blog__content-item:first-child {
-	margin-top: 10px;
+	margin-left: -3px;
 }
 
 .blog__content-item:last-child {
@@ -443,13 +439,10 @@
 	text-decoration: none;
 	font-size: 1.6rem;
 	color: var(--primary-color);
-	padding: 20px 40px;
-	line-height: 54px;
 }
 
 .blog__content-button {
-	margin-top: 16px;
-	margin-left: 40px;
+	width: 100%;
 }
 
 /* Main Read CSS */
@@ -483,7 +476,7 @@
 	width: 650px;
 	border: var(--border);
 	margin: 60px auto 0;
-	background: url(/assets/img/bookofthemonth.jpg) center / cover no-repeat;
+	background: url(../img/bookofthemonth.jpg) center / cover no-repeat;
 	z-index: 1;
 }
 
@@ -655,6 +648,11 @@ section.checkout {
 .form--checkout-group .checkout-payment-method .radio-item label {
 	margin: 0;
 	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
 }
 .form--checkout-group .checkout-payment-method .radio-item .radio-icon {
 	font-size: 4rem;
@@ -1147,8 +1145,9 @@ section.checkout {
 .catalog-navigation-header {
 	background: var(--primary-color);
 	color: var(--background-color);
-	padding: 20px 0 20px 80px;
+	padding: 2rem 0 2rem 8rem;
 	font-size: 1.6rem;
+	margin-right: -1px;
 }
 .catalog-navigation-item {
 	padding: 20px 0 20px 80px;
@@ -1189,7 +1188,6 @@ section.checkout {
 	border-bottom: var(--border-thin);
 }
 
-
 /* Home Product */
 
 .home__filter {
@@ -1227,8 +1225,9 @@ section.checkout {
 
 .home__item-img {
 	width: 100%;
-	height: auto;
-/* 	padding-bottom: 2rem; */
+	height: 26.7rem;
+	object-fit: cover;
+	overflow: hidden;
 }
 
 .home__product-title {
@@ -1265,8 +1264,8 @@ section.checkout {
 	position: absolute;
 	right: 3%;
 	top: 62%;
-    height: 3.4rem;
-    width: 3.4rem;
+	height: 3.4rem;
+	width: 3.4rem;
 	border: var(--border);
 	display: flex;
 	align-items: center;
