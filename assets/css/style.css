@@ -1305,3 +1305,113 @@ section.checkout {
 	line-height: 30px;
 	border-radius: 2px;
 }
+
+/* Thanks CSS */
+
+.thanks{
+	margin-bottom: 4rem;
+}
+
+.thanks__container{
+	width: 100%;
+}
+
+.thanks__title{
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--primary-color);
+	margin: 32px 0;
+}
+
+.thanks__box{
+	width: 100%;
+	border: var(--border);
+	background-color: var(--background-color);
+	position: relative;
+}
+
+.thanks__content{
+	margin-left: 40px;
+}
+
+.thanks__content-heading{
+	font-size: 4rem;
+	color: var(--primary-color);
+	margin: 36px 0 20px 0;
+}
+
+.thanks__content-text{
+	font-size: 1.6rem;
+	color: var(--primary-color);
+	margin: 20px 0;
+}
+
+.thanks__favourite-heading{
+	font-size: 4.2rem;
+	color: var(--primary-color);
+	margin: 36px 0 20px 0;
+	text-transform: uppercase;
+}
+
+.thanks__favourite-list{
+	display: flex;
+}
+
+.thanks__favourite-book{
+	width: 120px;
+	margin-right: 4.4rem;
+}
+
+.thanks__favourite-img{
+	width: 100%;
+	margin: 8px 0;
+}
+
+.thanks__favourite-title{
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--primary-color);
+	line-height: 2rem;
+	min-height: 4rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;	
+	margin: 4px 0;
+}
+
+.thanks__favourite-author{
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--primary-color);
+	line-height: 2rem;
+	min-height: 2rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	margin: 4px 0;
+}
+
+.thanks__favouvire-price{
+	font-size: 1.6rem;
+	color: var(--primary-color);
+	margin: 4px 0 12px 0;
+}
+
+.thanks__button{
+	margin-bottom: 3rem;
+}
+
+.thanks__heart-icon{
+	font-size: 20rem;
+	color: var(--primary-color);
+	font-weight: 100;
+}
+
+.thanks__heart{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
