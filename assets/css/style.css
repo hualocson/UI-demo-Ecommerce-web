@@ -88,6 +88,10 @@
 	color: var(--primary-color);
 }
 
+.header__info-item .login {
+	text-decoration: none;
+	color: var(--primary-color);
+}
 .header__info-icon {
 	font-size: 1.6rem;
 	margin-left: 4px;
@@ -606,7 +610,6 @@ section.checkout {
 	align-items: center;
 	position: relative;
 }
-
 
 .form--checkout-group .checkout-payment-method {
 	display: flex;
@@ -1310,15 +1313,15 @@ section.checkout {
 
 /* Thanks CSS */
 
-.thanks{
+.thanks {
 	margin-bottom: 4rem;
 }
 
-.thanks__container{
+.thanks__container {
 	width: 100%;
 }
 
-.thanks__title{
+.thanks__title {
 	font-size: 5rem;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -1326,51 +1329,51 @@ section.checkout {
 	margin: 32px 0;
 }
 
-.thanks__box{
+.thanks__box {
 	width: 100%;
 	border: var(--border);
 	background-color: var(--background-color);
 	position: relative;
 }
 
-.thanks__content{
+.thanks__content {
 	margin-left: 40px;
 }
 
-.thanks__content-heading{
+.thanks__content-heading {
 	font-size: 4rem;
 	color: var(--primary-color);
 	margin: 36px 0 20px 0;
 }
 
-.thanks__content-text{
+.thanks__content-text {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 	margin: 20px 0;
 }
 
-.thanks__favourite-heading{
+.thanks__favourite-heading {
 	font-size: 4.2rem;
 	color: var(--primary-color);
 	margin: 36px 0 20px 0;
 	text-transform: uppercase;
 }
 
-.thanks__favourite-list{
+.thanks__favourite-list {
 	display: flex;
 }
 
-.thanks__favourite-book{
+.thanks__favourite-book {
 	width: 120px;
 	margin-right: 4.4rem;
 }
 
-.thanks__favourite-img{
+.thanks__favourite-img {
 	width: 100%;
 	margin: 8px 0;
 }
 
-.thanks__favourite-title{
+.thanks__favourite-title {
 	font-size: 1.6rem;
 	font-weight: 600;
 	color: var(--primary-color);
@@ -1379,11 +1382,11 @@ section.checkout {
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;	
+	-webkit-line-clamp: 2;
 	margin: 4px 0;
 }
 
-.thanks__favourite-author{
+.thanks__favourite-author {
 	font-size: 1.6rem;
 	font-weight: 500;
 	color: var(--primary-color);
@@ -1396,23 +1399,23 @@ section.checkout {
 	margin: 4px 0;
 }
 
-.thanks__favouvire-price{
+.thanks__favouvire-price {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 	margin: 4px 0 12px 0;
 }
 
-.thanks__button{
+.thanks__button {
 	margin-bottom: 3rem;
 }
 
-.thanks__heart-icon{
+.thanks__heart-icon {
 	font-size: 20rem;
 	color: var(--primary-color);
 	font-weight: 100;
 }
 
-.thanks__heart{
+.thanks__heart {
 	position: absolute;
 	top: 5%;
 	right: 5%;
