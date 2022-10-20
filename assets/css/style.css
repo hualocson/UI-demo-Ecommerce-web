@@ -1583,36 +1583,58 @@ section.checkout {
 .card__checkbox{
 	width: 30%;
 	border: var(--border);
+	height: 360px;
+	border-radius: 16px;
+	margin-left: 40px;
+	background-color: var(--background-color);
 }
 
 .card__checkbox-title{
-
+	text-align: center;
+	font-size: 2.4rem;
+	color: var(--primary-color);
+	margin: 24px 0 12px 0;
 }
 
 .card__checkbox-list{
-
+	display: flex;
+	flex-direction: column;
 }
 
 .card__checkbox-item{
-
+	display: flex;
+	justify-content: space-between;
+	margin: 24px 24px;
 }
 
 .card__checkbox-tag{
-
+	font-size: 1.6rem;
+	color: var(--primary-color);
 }
 
 .card__checkbox-price{
-
+	font-size: 1.6rem;
+	color: var(--primary-color);
 }
 
 .card__checkbox-giftcode{
-
+	background-color: var(--background-color);
+	outline: none;
+	border: none;
+	font-size: 1.6rem;
+	color: var(--primary-color);
 }
 
-.card__checkbox-button{
-
+.card__gift-button{
+	min-width: 24px;
+	min-height: 24px;
 }
 
 .card__checkbox-total-price{
+	font-size: 1.6rem;
+	color: var(--primary-color)
+}
 
+.card-checkout__button{
+	margin: 0 24px;
 }
