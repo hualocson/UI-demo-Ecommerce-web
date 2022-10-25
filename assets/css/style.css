@@ -1001,135 +1001,6 @@ section.checkout {
 	font-size: 2rem;
 }
 
-/* ======= book details ========= */
-.book--details__section {
-	color: var(--primary-color);
-	margin: 5rem auto;
-}
-.book--details__image {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-	overflow: hidden;
-}
-.book--details {
-	font-weight: 700;
-	font-size: 1.6rem;
-	margin-left: 8rem;
-	background: var(--background-color);
-	border: var(--border);
-}
-.book--details .book--details__header {
-	padding: 2rem 2rem 1rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: var(--border-thin);
-}
-
-.book--details .book--details__header .book-name {
-	font-size: 5rem;
-	font-weight: 500;
-	letter-spacing: 0.5rem;
-}
-.book--details .book--details__header .book-price {
-	font-size: 3rem;
-	font-weight: 600;
-}
-.book--details .book--details__body {
-	font-size: 2rem;
-}
-.book--details__body .book--details__tag {
-	padding: 2rem 2rem 0;
-}
-.book--details__body .book--details__tag:not(.book--details__tag:last-child) {
-	border-bottom: var(--border-thin);
-}
-.book--details__body .book--details__tag .book-tag__name {
-	margin-bottom: 2rem;
-}
-
-.book--details__body .book--details__tag .book-tag__value {
-	margin-bottom: 2rem;
-}
-.book--details__body .book--details__tag .book-tag__value {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.book-tag__value .tag-item .tag-label {
-	padding: 0.2rem 3rem;
-	border-radius: 100rem;
-	border: var(--border-thin);
-	cursor: pointer;
-	background: transparent;
-}
-
-.book-tag__value .tag-item .tag-radio:checked ~ .tag-label {
-	background: var(--primary-color);
-	color: var(--background-color);
-}
-.book-tag__value .tag-item .tag-radio {
-	display: none;
-}
-
-.book--details__body .book--details__addtocart {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 2rem;
-	flex: 1 1 30%;
-}
-.book--details__body .book--details__addtocart .book-quantity {
-	flex-grow: 1;
-	display: flex;
-	justify-content: space-evenly;
-}
-.book--details__body .book--details__addtocart .button--rounded {
-	flex-grow: 2;
-	font-size: 2.5rem;
-	font-weight: 300;
-	margin-left: 2rem;
-}
-
-.book--details__body .book--details__desccollapse {
-	border-top: var(--border-thin);
-	padding: 2rem;
-}
-.book--details__body .book--details__desccollapse .desc-collapse_name {
-	margin-bottom: 1rem;
-}
-.book--details__body .book--details__desccollapse .collapsible::after {
-	content: "\f068";
-	font-size: 3rem;
-	font-family: "Font Awesome 5 free";
-	color: var(--primary-color);
-	float: right;
-	margin-right: 3rem;
-	font-weight: 800;
-	cursor: pointer;
-}
-.book--details__body .book--details__desccollapse .active::after {
-	content: "\2b";
-	font-size: 3rem;
-	font-family: "Font Awesome 5 free";
-	color: var(--primary-color);
-	float: right;
-	margin-right: 3rem;
-	font-weight: 800;
-	cursor: pointer;
-}
-.book--details__body .book--details__desccollapse .desc-collapse_content {
-	max-width: 80%;
-}
-.book--details__body
-	.book--details__desccollapse
-	.active
-	+ .desc-collapse_content {
-	display: none;
-}
-/* ======= end book details ========= */
-
 /* Catalog CSS */
 
 .catalog__container {
@@ -1230,9 +1101,8 @@ section.checkout {
 
 .home__item-img {
 	width: 100%;
-	height: 26.7rem;
+	height: 30rem;
 	object-fit: cover;
-	overflow: hidden;
 }
 
 .home__product-title {
@@ -1424,15 +1294,14 @@ section.checkout {
 
 /* Cart CSS */
 
-.cart__shop{
-
+.cart__shop {
 }
 
-.card__shop-container{
+.card__shop-container {
 	width: 100%;
 }
 
-.card__shop-content{
+.card__shop-content {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1445,30 +1314,29 @@ section.checkout {
 	margin: 32px 0;
 }
 
-.card__shop-list{
+.card__shop-list {
 	width: 70%;
 	background-color: var(--background-color);
 	border-radius: 10px;
 	margin-bottom: 40px;
-}	
+}
 
-.option__item{
+.option__item {
 	display: flex;
 	margin-bottom: 12px;
 	position: relative;
 	border-bottom: var(--border);
 }
 
-.option__item:first-child{
+.option__item:first-child {
 	border-bottom: none;
 }
 
-.option__item:last-child{
+.option__item:last-child {
 	/* border-bottom: none; */
 }
 
-
-.option__item-row{
+.option__item-row {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -1476,22 +1344,22 @@ section.checkout {
 	margin: 8px;
 }
 
-.option__item-column{
+.option__item-column {
 	width: 25%;
 	margin-left: 16px;
 }
 
-.option__item-info{
+.option__item-info {
 	display: flex;
 	align-items: center;
-	;max-width: 25%;
+	max-width: 25%;
 }
 
-.option__item-check{
+.option__item-check {
 	position: absolute;
 }
 
-.option__item-tag{
+.option__item-tag {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 	margin: 12px 0;
@@ -1499,19 +1367,19 @@ section.checkout {
 	width: 25%;
 }
 
-.option-first-tag{
+.option-first-tag {
 	text-align: left;
 }
 
-.option__item input{
+.option__item input {
 	position: absolute;
-  	opacity: 0;
-  	cursor: pointer;
-  	height: 0;
-  	width: 0
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
-.option__item:hover input ~ .checkmark{
+.option__item:hover input ~ .checkmark {
 	background-color: #ccc;
 }
 
@@ -1519,11 +1387,11 @@ section.checkout {
 	background-color: var(--primary-color);
 }
 
-.checkmark{
-  position: absolute;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+.checkmark {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
 }
 
 .checkmark:after {
@@ -1532,35 +1400,34 @@ section.checkout {
 	display: none;
 }
 
-.option__item input:checked ~ .checkmark:after{
+.option__item input:checked ~ .checkmark:after {
 	display: block;
 }
 
-.option__item .checkmark::after{
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.option__item .checkmark::after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
-
-.option__item-img{
+.option__item-img {
 	width: 100px;
 	height: auto;
 }
 
-.option__item-text{
+.option__item-text {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 	margin-left: 8px;
 }
 
-.option__item-name{
+.option__item-name {
 	margin: 4px 0;
 	line-height: 2rem;
 	min-height: 2rem;
@@ -1570,7 +1437,7 @@ section.checkout {
 	-webkit-line-clamp: 1;
 }
 
-.option__item-author{
+.option__item-author {
 	margin: 4px 0;
 	line-height: 2rem;
 	min-height: 2rem;
@@ -1580,29 +1447,28 @@ section.checkout {
 	-webkit-line-clamp: 1;
 }
 
-.option__item-price{
+.option__item-price {
 	font-size: 1.6rem;
-	color: var(--primary-color);	
+	color: var(--primary-color);
 	width: 25%;
 	text-align: center;
 }
 
-.option__item-final-price{
+.option__item-final-price {
 	font-size: 1.6rem;
-	color: var(--primary-color);	
+	color: var(--primary-color);
 	width: 25%;
 	text-align: center;
 }
 
-.option__item--quantity{
+.option__item--quantity {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 	text-align: center;
 	width: 25%;
 }
 
-
-.card__checkbox{
+.card__checkbox {
 	width: 30%;
 	border: var(--border);
 	height: 360px;
@@ -1611,35 +1477,35 @@ section.checkout {
 	background-color: var(--background-color);
 }
 
-.card__checkbox-title{
+.card__checkbox-title {
 	text-align: center;
 	font-size: 2.4rem;
 	color: var(--primary-color);
 	margin: 24px 0 12px 0;
 }
 
-.card__checkbox-list{
+.card__checkbox-list {
 	display: flex;
 	flex-direction: column;
 }
 
-.card__checkbox-item{
+.card__checkbox-item {
 	display: flex;
 	justify-content: space-between;
 	margin: 24px 24px;
 }
 
-.card__checkbox-tag{
+.card__checkbox-tag {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 }
 
-.card__checkbox-price{
+.card__checkbox-price {
 	font-size: 1.6rem;
 	color: var(--primary-color);
 }
 
-.card__checkbox-giftcode{
+.card__checkbox-giftcode {
 	background-color: var(--background-color);
 	outline: none;
 	border: none;
@@ -1647,16 +1513,16 @@ section.checkout {
 	color: var(--primary-color);
 }
 
-.card__gift-button{
+.card__gift-button {
 	min-width: 24px;
 	min-height: 24px;
 }
 
-.card__checkbox-total-price{
+.card__checkbox-total-price {
 	font-size: 1.6rem;
-	color: var(--primary-color)
+	color: var(--primary-color);
 }
 
-.card-checkout__button{
+.card-checkout__button {
 	margin: 0 24px;
 }

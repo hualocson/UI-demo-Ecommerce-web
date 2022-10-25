@@ -81,6 +81,9 @@ body {
 	right: 0;
 	color: #7ed0ff;
 }
+.signup-container .signup-form .form__signup-group.submit--button {
+	background: var(--black-color);
+}
 .signup-container .signup-form .form__signup-group .form__signup-submit {
 	font-size: 2rem;
 	height: 4.6rem;
@@ -88,9 +91,13 @@ body {
 	border: none;
 	background: var(--primary-color);
 	color: var(--background-color);
-	border-radius: 0.5rem;
 	font-family: var(--font);
 	cursor: pointer;
+	transition: transform 0.3s linear;
+}
+
+.signup-container .signup-form .form__signup-group .form__signup-submit:hover {
+	transform: translate(-0.6rem, -0.6rem);
 }
 .signup-content .other--signup__method {
 	display: flex;
@@ -104,10 +111,17 @@ body {
 	align-items: center;
 	width: 20rem;
 	height: 4.6rem;
-	border: 1px solid rgba(44, 129, 177, 0.4);
+	border: var(--border-thin);
 	border-radius: 0.5rem;
-	color: rgba(22, 108, 157, 0.7);
+	color: var(--primary-color);
+	opacity: 0.7;
+	transition: opacity 0.2s ease-in;
 }
+
+.signup-content .other--signup__method .signup__outline--button:hover {
+	opacity: 1;
+}
+
 .signup-content .other--signup__method .signup__outline--button img {
 	width: 2.2rem;
 	height: auto;
@@ -127,4 +141,9 @@ body {
 .signup-container .login {
 	text-decoration: none;
 	color: var(--primary-color);
+	opacity: 0.6;
+	transition: opacity 0.3s linear;
+}
+.signup-container .text:hover .login {
+	opacity: 1;
 }
