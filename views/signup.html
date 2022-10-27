@@ -19,7 +19,9 @@
 			<a href="../index.html" class="logo">
 				<img src="../assets/img/LogoLight.svg" alt="logo" />
 			</a>
-			<img src="../assets/img/ImgSignup.svg" alt="" class="signup--img" />
+			<div class="signup--image">
+				<img src="../assets/img/ImgSignup.svg" alt="" />
+			</div>
 			<div class="signup-content">
 				<h3 class="signup-header">Sign up</h3>
 				<div class="other--signup__method">
@@ -47,23 +49,34 @@
 						<input
 							type="text"
 							class="form__signup-input"
-							placeholder="Full name"
+							id="Fullname"
+							required
 						/>
+						<div class="underline"></div>
+						<label for="Fullname">Full Name</label>
 					</div>
 					<div class="form__signup-group">
 						<input
 							type="email"
 							class="form__signup-input"
-							placeholder="Email"
+							id="Email"
+							required
 						/>
+						<div class="underline"></div>
+						<label for="Email">Email</label>
 					</div>
 					<div class="form__signup-group">
 						<input
 							type="password"
 							class="form__signup-input"
-							placeholder="Password"
+							id="Password"
+							required
 						/>
-						<i class="fa-solid fa-eye-slash show_pass-icon"></i>
+						<div class="underline"></div>
+						<label for="Password">Password</label>
+						<div class="show__pass--icon">
+							<i class="fa-solid fa-eye-slash"></i>
+						</div>
 					</div>
 					<div class="form__signup-group submit--button">
 						<button type="submit" class="form__signup-submit">

@@ -19,7 +19,9 @@
 			<a href="../index.html" class="logo">
 				<img src="../assets/img/LogoLight.svg" alt="logo" />
 			</a>
-			<img src="../assets/img/ImgLogin.svg" alt="" class="login--img" />
+			<div class="login--image">
+				<img src="../assets/img/ImgLogin.svg" alt="" />
+			</div>
 			<div class="login-content">
 				<h3 class="login-header">Welcome</h3>
 				<form action="#" class="login-form">
@@ -27,16 +29,24 @@
 						<input
 							type="text"
 							class="form__login-input"
-							placeholder="Username or Email"
+							id="username"
+							required
 						/>
+						<div class="underline"></div>
+						<label for="username">Username or Email</label>
 					</div>
 					<div class="form__login-group">
 						<input
 							type="password"
 							class="form__login-input"
-							placeholder="Password"
+							id="password"
+							required
 						/>
-						<i class="fa-solid fa-eye-slash show_pass-icon"></i>
+						<div class="underline"></div>
+						<label for="password">Password</label>
+						<div class="show__pass--icon">
+							<i class="fa-solid fa-eye-slash"></i>
+						</div>
 					</div>
 					<div class="forgot__pass">
 						<a href="#" class="">I forgot my password</a>

@@ -12,8 +12,11 @@ body {
 	display: flex;
 	max-width: 1500px;
 	min-width: 80vw;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	position: relative;
+	box-shadow: rgba(201, 214, 255, 0.4) 5px 5px,
+		rgba(201, 214, 255, 0.3) 10px 10px, rgba(201, 214, 255, 0.2) 15px 15px,
+		rgba(201, 214, 255, 0.1) 20px 20px, rgba(201, 214, 255, 0.05) 25px 25px;
 }
 .logo {
 	flex-grow: 5;
@@ -25,13 +28,19 @@ body {
 	padding: 2.5rem;
 }
 
-.signup-container .signup--img {
+.signup-container .signup--image {
 	position: absolute;
 	width: 50rem;
 	height: auto;
 	top: 50%;
-	left: 2.5rem;
-	transform: translateY(-40%);
+	left: 0;
+	transform: translate(10%, -50%);
+}
+.signup-container .signup--image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
 }
 .signup-content {
 	background: var(--background-color);
@@ -64,22 +73,81 @@ body {
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin-bottom: 4.5rem;
+	margin-bottom: 6rem;
 }
 
 .signup-container .signup-form .form__signup-group .form__signup-input {
-	outline: none;
 	border: none;
 	background: var(--background-color);
 	border-bottom: 1px solid #a6c7d2;
+	font-size: 1.6rem;
+	outline: none;
 	width: 100%;
+	padding: 0.5rem 0;
+	color: var(--primary-color);
+}
+.signup-container
+	.signup-form
+	.form__signup-group
+	.form__signup-input:focus
+	~ label,
+.signup-container
+	.signup-form
+	.form__signup-group
+	.form__signup-input:valid
+	~ label {
+	transform: translateY(-3rem);
+	font-size: 1.2rem;
+	opacity: 1;
 }
 
-.signup-container .signup-form .form__signup-group .show_pass-icon {
+.signup-container .signup-form .form__signup-group label {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	color: var(--primary-color);
+	opacity: 0.6;
+	transition: all 0.3s ease;
+	pointer-events: none;
+}
+
+.signup-container .signup-form .form__signup-group .underline {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.signup-container .signup-form .form__signup-group .underline::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	transform: scaleX(0);
+	background: var(--primary-color);
+	transition: transform 0.3s linear;
+}
+
+.signup-container
+	.signup-form
+	.form__signup-group
+	.form__signup-input:focus
+	~ .underline::before,
+.signup-container
+	.signup-form
+	.form__signup-group
+	.form__signup-input:valid
+	~ .underline::before {
+	transform: scaleX(1);
+}
+
+.signup-container .signup-form .form__signup-group .show__pass--icon {
 	position: absolute;
 	top: 0;
 	right: 0;
 	color: #7ed0ff;
+	cursor: pointer;
 }
 .signup-container .signup-form .form__signup-group.submit--button {
 	background: var(--black-color);
@@ -146,4 +214,11 @@ body {
 }
 .signup-container .text:hover .login {
 	opacity: 1;
+}
+
+@media (max-width: 1400px) {
+	.signup-container .signup--image {
+		width: 40rem;
+		flex-grow: 3;
+	}
 }
