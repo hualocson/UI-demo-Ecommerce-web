@@ -1315,17 +1315,28 @@ section.checkout {
 }
 
 .card__shop-list {
+	position: relative;
 	width: 70%;
 	background-color: var(--background-color);
 	border-radius: 10px;
 	margin-bottom: 40px;
+	background: linear-gradient(
+		180deg,
+		rgba(248, 246, 231, 0.2) 0%,
+		rgba(248, 246, 231, 0.6) 100%
+	);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(248, 246, 231, 0.2);
+	box-shadow: -5px -5px 10px #ffffff30, 3px 3px 5px rgba(94, 104, 121, 0.228);
 }
 
 .option__item {
 	display: flex;
 	margin-bottom: 12px;
 	position: relative;
-	border-bottom: var(--border-thin);
+	border-bottom: 1px solid rgba(22, 108, 157, 0.25);
+	border-bottom: 1px solid #166c9d20;
 }
 
 .option__item:first-child {
@@ -1342,6 +1353,10 @@ section.checkout {
 	align-items: center;
 	justify-content: space-between;
 	margin: 8px 24px;
+}
+
+.option__item-row div:nth-child(3) {
+	flex: 0 0 10rem;
 }
 
 .option__item-column {
@@ -1365,6 +1380,7 @@ section.checkout {
 	margin: 12px 0;
 	text-align: center;
 	width: 25%;
+	font-weight: bold;
 }
 
 .option-first-tag {
@@ -1380,21 +1396,27 @@ section.checkout {
 }
 
 .option__item:hover input ~ .checkmark {
-	background-color: #ccc;
+	background-color: var(--accent-light-color);
 }
 
 .option__item input:checked ~ .checkmark {
 	background-color: var(--primary-color);
 }
 
+.option__item input:checked ~ .checkmark:after {
+	display: block;
+}
+
 .checkmark {
 	position: absolute;
 	height: 25px;
 	width: 25px;
-	background-color: #eee;
+	background-color: var(--background-color);
 	border-radius: 50%;
 	top: 0;
 	left: 1rem;
+	border: 1px solid #166c9d50;
+	transition: all 0.2s linear;
 }
 
 .checkmark:after {
@@ -1403,16 +1425,12 @@ section.checkout {
 	display: none;
 }
 
-.option__item input:checked ~ .checkmark:after {
-	display: block;
-}
-
 .option__item .checkmark::after {
 	left: 9px;
 	top: 5px;
 	width: 5px;
 	height: 10px;
-	border: solid white;
+	border: solid var(--background-color);
 	border-width: 0 3px 3px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -1432,6 +1450,8 @@ section.checkout {
 
 .option__item-name {
 	margin: 4px 0;
+	font-size: 1.8rem;
+	font-weight: bold;
 	line-height: 2rem;
 	min-height: 2rem;
 	overflow: hidden;
@@ -1465,13 +1485,18 @@ section.checkout {
 }
 
 .option__item--quantity {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	color: var(--primary-color);
 	text-align: center;
 	width: 25%;
+	border: var(--border-thin);
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5rem;
+	border-radius: 100rem;
 }
 
-.option__item--quantity i{
+.option__item--quantity i {
 	cursor: pointer;
 }
 

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;700;800&display=swap");
 
 :root {
-	--primary-color: #166c9d;
+	--primary-color: rgb(22, 108, 157);
 	--accent-light-color: #c9d6ff;
 	--accent-dark-color: #166c9d;
-	--accent-color: #d9a7c7;
+	--accent-color: rgb(217, 167, 199);
 	--danger-color: #dd5353;
 	--background-color: #f8f6e7;
 	--white-color: #fff;
