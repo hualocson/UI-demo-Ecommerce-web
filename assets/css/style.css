@@ -1325,15 +1325,15 @@ section.checkout {
 	display: flex;
 	margin-bottom: 12px;
 	position: relative;
-	border-bottom: var(--border);
+	border-bottom: var(--border-thin);
 }
 
 .option__item:first-child {
-	border-bottom: none;
+	border: none;
 }
 
 .option__item:last-child {
-	/* border-bottom: none; */
+	border-bottom: none;
 }
 
 .option__item-row {
