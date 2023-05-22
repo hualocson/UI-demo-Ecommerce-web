@@ -12,11 +12,22 @@
 		/>
 		<link rel="stylesheet" href="./assets/css/base.css" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+		</script>
+		<script>
+			$(function(){
+				$("#header").load("./views/header.html");
+				$("#footer").load("./views/footer.html");
+			});
+		</script>
 	</head>
 	<body>
-		<script src="./scripts/load_html.js"></script>
-
-		<my-header></my-header>
+		<!-- <script async src="./scripts/load_html.js" crossorigin="anonymous"></script> -->
+		<!-- <my-header></my-header> -->
+		<div id="header"></div>
 		<div class="main">
 			<div class="main__catalog">
 				<div class="grid__full-width">
@@ -197,6 +208,7 @@
 				</div>
 			</div>
 		</div>
-		<my-footer></my-footer>
+		<!-- <my-footer></my-footer> -->
+		<div id="footer"></div>
 	</body>
 </html>

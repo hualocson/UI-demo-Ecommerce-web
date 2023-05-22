@@ -1,0 +1,179 @@
+section.order__history {
+	color: var(--primary-color);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.section__header {
+	/* text-align: center; */
+	font-size: 5rem;
+	line-height: 1;
+	font-weight: 700;
+}
+
+.toolbar {
+  margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+  padding: 2rem 5rem;
+  background-color: var(--accent-color);
+  color:var(--background-color);
+  border-radius: 1rem;
+}
+
+.toolbar input {
+	padding: .5rem;
+	outline: none;
+	font-size: 1.6rem;
+	border: var(--border-thin);
+	color: var(--primary-color);
+	margin-right: 1rem;
+}
+
+.toolbar .button-search {
+	color: var(--background-color);
+	padding: 1rem 2rem;
+	outline: none;
+	border: none;
+	background: var(--primary-color);
+	border-radius: .5rem;
+	cursor: pointer;
+	transition: all .5s linear;
+}
+.toolbar .button-search:hover {
+	box-shadow: 0 0 0 .2rem rgba(22, 108, 157, 0.1),
+		0 0 .5rem .5rem rgba(22, 108, 157, 0.2), 0 0 .3rem rgba(22, 108, 157, 0.3),
+		0 0 .5rem .5rem rgba(22, 108, 157, 0.4);
+}
+
+.toolbar .filter-list {
+  font-size: 2rem;
+	display: flex;
+	justify-content: space-between;
+  width: 50vw;
+}
+
+.toolbar .filter-list li.active {
+  color:var(--primary-color);
+  position: relative;
+}
+.toolbar .filter-list li.active::after{
+  content: "";
+  position: absolute;
+  bottom: -.4rem;
+  left: 0;
+  right: 0;
+  height: .3rem;
+  background: var(--primary-color);
+  border-radius: 100rem;
+}
+
+
+.section__content {
+	margin-top: 2rem;
+}
+
+.table__container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.responsive-table {
+	overflow: auto;
+	min-height: 46rem;
+	height: 46rem;
+}
+
+.responsive-table li {
+	border-radius: 3px;
+	padding: 25px 30px;
+	margin-bottom: 25px;
+}
+.responsive-table li:last-child {
+	margin-bottom: 0;
+}
+
+.table__container .table-header {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	border-bottom: var(--border);
+	font-weight: 700;
+	border-radius: 3px;
+	padding: 2.5rem 3rem;
+	margin-bottom: 2.5rem;
+	margin-right: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.responsive-table .table-row {
+	background-color: var(--background-color);
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 1rem;
+}
+
+.col {
+	flex-basis: calc(100% / 5);
+	text-align: center;
+}
+
+.col:first-child {
+	text-align: left;
+}
+.col:last-child {
+	text-align: right;
+	flex-basis: 10px;
+}
+
+.col.col-action a {
+	color: var(--primary-color);
+}
+.col.col-action a:hover {
+	color: var(--accent-color);
+}
+
+/* status */
+
+[data-label="status"][status-value="Paid"] {
+	color: #56f000;
+}
+[data-label="status"][status-value="Not Paid"] {
+	color: #ff3838;
+}
+[data-label="status"][status-value="Refund"] {
+	color: #ffb302;
+}
+[data-label="status"] {
+	position: relative;
+}
+
+[data-label="status"]::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	padding: 6px 0;
+	width: 120px;
+	transform: translate(-50%, -50%);
+	background: currentColor;
+	opacity: 0.2;
+	border-radius: 100rem;
+}
+
+[data-label="status"]::after {
+	content: attr(status-value);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* end status */

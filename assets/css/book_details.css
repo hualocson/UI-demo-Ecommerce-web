@@ -169,6 +169,7 @@ section.similarly--book__section {
 	margin-bottom: 5rem;
 }
 .similarly--book__section .similarly--book__slider {
+	height: 40rem;
 	padding-bottom: 3rem;
 }
 .section--header {
@@ -204,14 +205,30 @@ section.similarly--book__section {
 	margin-top: 0.5rem;
 	background: var(--primary-color);
 	color: var(--background-color);
+	height: 100%;
 }
 .book--item .book--item__info .book--item__name {
 	font-size: 2rem;
 	margin-bottom: 0.5rem;
 	font-weight: 600;
+	min-height: 4rem;
+	word-wrap: break-word;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	line-height: 2rem;
 }
 .book--item__info .book--item__auth {
 	font-size: 1.4rem;
+	display: -webkit-box;
+	min-height: 4rem;
+	line-height: 2rem;
+	word-wrap: break-word;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
 }
 /* ======= end book details ========= */
 
@@ -220,8 +237,8 @@ section.similarly--book__section {
 	margin-bottom: 5rem;
 }
 .review__section .review--body {
-	display: grid;
-	grid-template-columns: 1fr;
+	display: flex;
+	flex-direction: column;
 	gap: 5rem;
 	margin-bottom: 5rem;
 }

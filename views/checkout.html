@@ -16,25 +16,19 @@
 	<body>
 		<my-header></my-header>
 		<section class="checkout grid">
-			<div class="grid__row">
-				<div class="leftside grid__column-6">
-					<h3 class="leftside--header">Check out</h3>
-					<div class="checkout--body">
-						<div class="checkout--step_progress_bar">
-							<ul class="progressbar">
-								<li class="active">information</li>
-								<li>delivery</li>
-								<li>payment</li>
-							</ul>
-						</div>
-						<div class="checkout--body__info">
-							<div class="form--container">
-								<form
-									action=""
-									method="post"
-									class="form--checkout"
-									id="form--checkout"
-								>
+			<form action="" method="post" class="form--checkout" id="form--checkout">
+				<div class="grid__row">
+					<div class="leftside grid__column-6">
+						<h3 class="leftside--header">Check out</h3>
+						<div class="checkout--body">
+							<div class="checkout--step_progress_bar">
+								<ul class="progressbar">
+									<li class="active">information</li>
+									<li>payment</li>
+								</ul>
+							</div>
+							<div class="checkout--body__info">
+								<div class="form_1 form--container">
 									<div class="form--header">
 										<span class="strong--text">New customer</span> / regular
 										customer
@@ -75,18 +69,33 @@
 										<span class="form--checkout-message"></span>
 									</div>
 									<div class="form--checkout-group">
-										<div class="form--checkout-label">3. country</div>
-										<div class="dropdown">
-											<div class="dropdown-select dropdown-select__country">
+										<label for="email" class="form--checkout-label"
+											>3. e-mail</label
+										>
+										<input
+											type="email"
+											id="email"
+											placeholder="email@gmail.com"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-message"></span>
+									</div>
+									<!-- <div class="form--checkout-group">
+										<div class="form--checkout-label">4. country</div>
+										<select name="ls_province"></select>
+										<select name="ls_district"></select>
+										<select name="ls_ward"></select>
+										<select class="dropdown">
+											<option class="dropdown-select dropdown-select__country">
 												<span class="select">Viet Nam</span>
 												<i class="fa fa-caret-down icon"></i>
-											</div>
+											</option>
 											<div class="dropdown-list">
 												<div class="dropdown-list__item">China</div>
 												<div class="dropdown-list__item">Viet Nam</div>
 												<div class="dropdown-list__item">Singapore</div>
 											</div>
-										</div>
+										</select>
 										<div class="form--checkout-label city">city</div>
 										<div class="dropdown">
 											<div class="dropdown-select dropdown-select__city">
@@ -100,20 +109,27 @@
 											</div>
 										</div>
 										<span class="form--checkout-message"></span>
+									</div> -->
+
+									<div class="form--checkout-group">
+										<div class="form--checkout-label">4. address</div>
+										<select name="ls_province" class="local-selector"></select>
+										<select name="ls_district" class="local-selector"></select>
+										<select name="ls_ward" class="local-selector"></select>
 									</div>
 									<div class="form--checkout-group">
 										<label for="email" class="form--checkout-label"
-											>4. e-mail</label
+											>5. address details</label
 										>
 										<input
 											type="email"
 											id="email"
-											placeholder="email@gmail.com"
-											class="form--checkout-textbox"
+											placeholder="your address"
+											class="form--checkout-textbox long--textbox"
 										/>
 										<span class="form--checkout-message"></span>
 									</div>
-									<div class="form--checkout-group">
+									<!-- <div class="form--checkout-group">
 										<input
 											type="checkbox"
 											id="loyalty"
@@ -136,125 +152,246 @@
 											>Please, don't call me back</label
 										>
 										<span class="form--checkout-message"></span>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="checkout--button">
-							<a href="../index.html" class="button--outline_round">Back</a>
-							<a href="./checkout_step2.html" class="button--rounded">Next Step</a>
-						</div>
-					</div>
-				</div>
-				<div class="rightside grid__column-4">
-					<h3 class="rightside--header">Order</h3>
-					<div class="order--details">
-						<div class="product--card">
-							<span class="ordinal_number">1.</span>
-							<img
-								src="../assets/img/willimg.jpg"
-								alt=""
-								class="product--img"
-							/>
-							<div class="product--info">
-								<h3 class="product--name">Will</h3>
-								<h4 class="product--auth thin--text">
-									Will Smith, Mark Manson
-								</h4>
-							</div>
-							<div class="product--quantity">
-								<i class="fa-solid fa-minus"></i>
-								<span class="quantity">1</span>
-								<i class="fa-solid fa-plus"></i>
-							</div>
-							<div class="product--rightside">
-								<a href="#" class="discard--button">
-									<i class="fa-solid fa-xmark"></i>
-								</a>
-								<p class="product--price">15$</p>
-							</div>
-						</div>
-						<div class="product--card">
-							<span class="ordinal_number">2.</span>
-							<img
-								src="../assets/img/howtolive.jpg"
-								alt=""
-								class="product--img"
-							/>
-							<div class="product--info">
-								<h3 class="product--name">How to live</h3>
-								<h4 class="product--auth thin--text">Josh Cohen</h4>
-							</div>
-							<div class="product--quantity">
-								<i class="fa-solid fa-minus"></i>
-								<span class="quantity">1</span>
-								<i class="fa-solid fa-plus"></i>
-							</div>
-							<div class="product--rightside">
-								<a href="#" class="discard--button">
-									<i class="fa-solid fa-xmark"></i>
-								</a>
-								<p class="product--price">15$</p>
-							</div>
-						</div>
-						<div class="product--card">
-							<span class="ordinal_number">3.</span>
-							<img
-								src="../assets/img/ulysses.jpg"
-								alt=""
-								class="product--img"
-							/>
-							<div class="product--info">
-								<h3 class="product--name">Ulysses</h3>
-								<h4 class="product--auth thin--text">Vintage Joyse</h4>
-							</div>
+									</div> -->
+								</div>
 
-							<div class="product--quantity">
-								<i class="fa-solid fa-minus"></i>
-								<span class="quantity">1</span>
-								<i class="fa-solid fa-plus"></i>
+								<div class="form_2 form--container" style="display: none">
+									<div class="form--header">
+										<span class="strong--text">Payment</span>
+									</div>
+									<div class="checkout-payment--header">select method</div>
+									<div class="form--checkout-group">
+										<div class="checkout-payment-method">
+											<div class="radio-item">
+												<label for="apple-pay" class="form--checkout-label">
+													<i class="fa-brands fa-apple-pay radio-icon"></i>
+													<p>apple pay</p>
+												</label>
+												<input
+													type="radio"
+													id="apple-pay"
+													class="form--checkout-radio"
+													name="checkout-payment-method"
+												/>
+											</div>
+											<div class="radio-item">
+												<label for="google-pay" class="form--checkout-label">
+													<i class="fa-brands fa-google-pay radio-icon"></i>
+													<p>google pay</p>
+												</label>
+												<input
+													type="radio"
+													id="google-pay"
+													name="checkout-payment-method"
+													class="form--checkout-radio"
+												/>
+											</div>
+											<div class="radio-item">
+												<label for="credit-pay" class="form--checkout-label">
+													<i class="fa-regular fa-credit-card radio-icon"></i>
+													<p>credit pay</p>
+												</label>
+												<input
+													type="radio"
+													id="credit-pay"
+													name="checkout-payment-method"
+													class="form--checkout-radio"
+													checked
+												/>
+											</div>
+										</div>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+									<div class="form--checkout-group valid">
+										<label for="card_number" class="form--checkout-label">
+											1. card number
+										</label>
+										<input
+											type="text"
+											id="card_number"
+											placeholder="2222 2222 2222 2222"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+									<div class="form--checkout-group">
+										<label for="name_on_card" class="form--checkout-label"
+											>2. name on card</label
+										>
+										<input
+											type="text"
+											id="name_on_card"
+											placeholder="Your address"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+									<div class="form--checkout-group">
+										<label for="date_of_expire" class="form--checkout-label"
+											>3. date of expire</label
+										>
+										<input
+											type="text"
+											id="date_of_expire"
+											placeholder="06/41"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+									<div class="form--checkout-group">
+										<label for="CVV" class="form--checkout-label">4. CVV</label>
+										<input
+											type="text"
+											id="CVV"
+											placeholder="111"
+											class="form--checkout-textbox"
+										/>
+										<span class="form--checkout-status"></span>
+										<span class="form--checkout-message"></span>
+									</div>
+								</div>
 							</div>
-							<div class="product--rightside">
-								<a href="#" class="discard--button">
-									<i class="fa-solid fa-xmark"></i>
-								</a>
-								<p class="product--price">15$</p>
+							<div class="checkout--button">
+								<div class="form_1_btn">
+									<a class="button--rounded next--button">Next Step</a>
+								</div>
+
+								<div class="form_2_btn" style="display: none">
+									<a class="button--outline_round back--button">Back</a>
+									<button
+										type="submit"
+										form="form--checkout"
+										class="button--rounded pay--button"
+									>
+										Pay
+									</button>
+								</div>
 							</div>
 						</div>
-						<div class="other--fee">
-							<div class="fee--card delivery">
-								<div class="fee--info">
-									<div class="fee--name">+ delivery</div>
-									<p class="fee--desc thin--text">
-										add just 5$ more for free delivery
-									</p>
+					</div>
+					<div class="rightside grid__column-4">
+						<h3 class="rightside--header">Order</h3>
+						<div class="order--details">
+							<div class="product--card">
+								<span class="ordinal_number">1.</span>
+								<img
+									src="../assets/img/willimg.jpg"
+									alt=""
+									class="product--img"
+								/>
+								<div class="product--info">
+									<h3 class="product--name">Will</h3>
+									<h4 class="product--auth thin--text">
+										Will Smith, Mark Manson
+									</h4>
 								</div>
-								<div class="fee--cost">2$</div>
-							</div>
-							<div class="fee--card loyalty">
-								<div class="fee--info">
-									<div class="fee--name">+ loyalty system</div>
-									<p class="fee--desc thin--text">
-										you will able to pay with bonuses from the next purchase
-									</p>
+								<div class="product--quantity">
+									<i class="fa-solid fa-minus"></i>
+									<span class="quantity">1</span>
+									<i class="fa-solid fa-plus"></i>
 								</div>
-								<div class="fee--cost">0$</div>
-							</div>
-						</div>
-						<div class="amount">
-							<div class="amount--info">
-								<div class="amount--header">amount</div>
-								<div class="order--date thin--text">
-									Order issued on 10.10.2022
+								<div class="product--rightside">
+									<a href="#" class="discard--button">
+										<i class="fa-solid fa-xmark"></i>
+									</a>
+									<p class="product--price">15$</p>
 								</div>
 							</div>
-							<div class="total--amount">32$</div>
+							<div class="product--card">
+								<span class="ordinal_number">2.</span>
+								<img
+									src="../assets/img/howtolive.jpg"
+									alt=""
+									class="product--img"
+								/>
+								<div class="product--info">
+									<h3 class="product--name">How to live</h3>
+									<h4 class="product--auth thin--text">Josh Cohen</h4>
+								</div>
+								<div class="product--quantity">
+									<i class="fa-solid fa-minus"></i>
+									<span class="quantity">1</span>
+									<i class="fa-solid fa-plus"></i>
+								</div>
+								<div class="product--rightside">
+									<a href="#" class="discard--button">
+										<i class="fa-solid fa-xmark"></i>
+									</a>
+									<p class="product--price">15$</p>
+								</div>
+							</div>
+							<div class="product--card">
+								<span class="ordinal_number">3.</span>
+								<img
+									src="../assets/img/ulysses.jpg"
+									alt=""
+									class="product--img"
+								/>
+								<div class="product--info">
+									<h3 class="product--name">Ulysses</h3>
+									<h4 class="product--auth thin--text">Vintage Joyse</h4>
+								</div>
+
+								<div class="product--quantity">
+									<i class="fa-solid fa-minus"></i>
+									<span class="quantity">1</span>
+									<i class="fa-solid fa-plus"></i>
+								</div>
+								<div class="product--rightside">
+									<a href="#" class="discard--button">
+										<i class="fa-solid fa-xmark"></i>
+									</a>
+									<p class="product--price">15$</p>
+								</div>
+							</div>
+							<div class="other--fee">
+								<div class="fee--card delivery">
+									<div class="fee--info">
+										<div class="fee--name">+ delivery</div>
+										<p class="fee--desc thin--text">
+											add just 5$ more for free delivery
+										</p>
+									</div>
+									<div class="fee--cost">2$</div>
+								</div>
+								<div class="fee--card loyalty">
+									<div class="fee--info">
+										<div class="fee--name">+ loyalty system</div>
+										<p class="fee--desc thin--text">
+											you will able to pay with bonuses from the next purchase
+										</p>
+									</div>
+									<div class="fee--cost">0$</div>
+								</div>
+							</div>
+							<div class="amount">
+								<div class="amount--info">
+									<div class="amount--header">amount</div>
+									<div class="order--date thin--text">
+										Order issued on 10.10.2022
+									</div>
+								</div>
+								<div class="total--amount">32$</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</section>
 		<my-footer></my-footer>
 		<script src="../scripts/load_html.js"></script>
+		<script src="../scripts/multistep_form.js"></script>
+		<script src="../scripts/vietnamlocalselector.js"></script>
+		<script>
+			var localpicker = new LocalPicker({
+				province: "ls_province",
+				district: "ls_district",
+				ward: "ls_ward",
+			});
+		</script>
 	</body>
 </html>

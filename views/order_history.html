@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Order History</title>
+		<link
+			rel="stylesheet"
+			href="../assets/fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/base.css" />
+		<link rel="stylesheet" href="../assets/css/style.css" />
+		<link rel="stylesheet" href="../assets/css/order_history.css" />
+	</head>
+	<body>
+		<my-header></my-header>
+		<section class="order__history grid" id="order__history">
+			<h1 class="section__header">Order History</h1>
+			<div class="toolbar">
+				<ul class="filter-list">
+					<li class="active">All Order</li>
+					<li>Paid</li>
+					<li>Not Paid</li>
+					<li>Refund</li>
+				</ul>
+				<form action="../index.html">
+					<input type="text" />
+					<button type="submit" class="button-search">Search</button>
+				</form>
+			</div>
+			<div class="table__container section__content">
+				<div class="table-header">
+					<div class="col">Order ID</div>
+					<div class="col">Create Date</div>
+					<div class="col">Total</div>
+					<div class="col">Status</div>
+					<div class="col"></div>
+				</div>
+				<ul class="responsive-table">
+					<li class="table-row">
+						<div class="col" data-label="order_id">1023123</div>
+						<div class="col" data-label="create_date">07/12/2022</div>
+						<div class="col" data-label="total">200.000 vnd</div>
+						<div class="col" status-value="Paid" data-label="status"></div>
+						<div class="col col-action">
+							<a href="#order__history">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</a>
+						</div>
+					</li>
+					<li class="table-row">
+						<div class="col" data-label="order_id">1023123</div>
+						<div class="col" data-label="create_date">07/12/2022</div>
+						<div class="col" data-label="total">365.000 vnd</div>
+						<div class="col" status-value="Not Paid" data-label="status"></div>
+						<div class="col col-action">
+							<a href="#order__history">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</a>
+						</div>
+					</li>
+					<li class="table-row">
+						<div class="col" data-label="order_id">1023123</div>
+						<div class="col" data-label="create_date">07/12/2022</div>
+						<div class="col" data-label="total">200.000 vnd</div>
+						<div class="col" status-value="Refund" data-label="status"></div>
+						<div class="col col-action">
+							<a href="#order__history">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</a>
+						</div>
+					</li>
+					<li class="table-row">
+						<div class="col" data-label="order_id">1023123</div>
+						<div class="col" data-label="create_date">07/12/2022</div>
+						<div class="col" data-label="total">200.000 vnd</div>
+						<div class="col" status-value="Refund" data-label="status"></div>
+						<div class="col col-action">
+							<a href="#order__history">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</a>
+						</div>
+					</li>
+					<li class="table-row">
+						<div class="col" data-label="order_id">1023123</div>
+						<div class="col" data-label="create_date">07/12/2022</div>
+						<div class="col" data-label="total">200.000 vnd</div>
+						<div class="col" status-value="Refund" data-label="status"></div>
+						<div class="col col-action">
+							<a href="#order__history">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<my-footer></my-footer>
+		<script src="../scripts/load_html.js"></script>
+	</body>
+</html>

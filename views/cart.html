@@ -29,9 +29,13 @@
 									<div class="option__item-tag">Final price</div>
 								</div>
 							</label>
-							<label class="option__item">
-								<input type="checkbox" class="item-checkbox" />
-								<span class="checkmark"></span>
+							<div class="option__item">
+								<input
+									type="checkbox"
+									class="item-checkbox"
+									id="item-checkbox"
+								/>
+								<label for="item-checkbox" class="checkmark"></label>
 								<div class="option__item-row">
 									<div class="option__item-info">
 										<img
@@ -40,26 +44,32 @@
 											class="option__item-img"
 										/>
 										<div class="option__item-text">
-											<p class="option__item-name">Will</p>
-											<p class="option__item-author">Will Smith, Mark Manson</p>
+											<p class="option__item-name">
+												Will Will Will WillWill Will Will WillWill Will Will
+												Will
+											</p>
+											<p class="option__item-author">
+												Will Smith, Mark MansonWill Smith, Mark MansonWill
+												Smith, Mark Manson
+											</p>
 										</div>
 									</div>
 									<div class="option__item-price">15$</div>
 									<div class="option__item--quantity">
-										<i
-											class="fa-solid fa-minus option__item--quantity--icon"
-										></i>
+										<i class="fa-solid fa-minus minus--button"></i>
 										<span class="item--quantity">1</span>
-										<i
-											class="fa-solid fa-plus option__item--quantity--icon"
-										></i>
+										<i class="fa-solid fa-plus plus--button"></i>
 									</div>
 									<div class="option__item-final-price">30$</div>
 								</div>
-							</label>
-							<label class="option__item">
-								<input type="checkbox" class="item-checkbox" />
-								<span class="checkmark"></span>
+							</div>
+							<div class="option__item">
+								<input
+									type="checkbox"
+									class="item-checkbox"
+									id="item-checkbox"
+								/>
+								<label class="checkmark"></label>
 								<div class="option__item-row">
 									<div class="option__item-info">
 										<img
@@ -68,67 +78,25 @@
 											class="option__item-img"
 										/>
 										<div class="option__item-text">
-											<p class="option__item-name">Will</p>
-											<p class="option__item-author">Will Smith, Mark Manson</p>
+											<p class="option__item-name">
+												Will Will Will WillWill Will Will WillWill Will Will
+												Will
+											</p>
+											<p class="option__item-author">
+												Will Smith, Mark MansonWill Smith, Mark MansonWill
+												Smith, Mark Manson
+											</p>
 										</div>
 									</div>
 									<div class="option__item-price">15$</div>
 									<div class="option__item--quantity">
-										<i class="fa-solid fa-minus"></i>
+										<i class="fa-solid fa-minus minus--button"></i>
 										<span class="item--quantity">1</span>
-										<i class="fa-solid fa-plus"></i>
+										<i class="fa-solid fa-plus plus--button"></i>
 									</div>
 									<div class="option__item-final-price">30$</div>
 								</div>
-							</label>
-							<label class="option__item">
-								<input type="checkbox" class="item-checkbox" />
-								<span class="checkmark"></span>
-								<div class="option__item-row">
-									<div class="option__item-info">
-										<img
-											src="../assets/img/bookofthemonth.jpg"
-											alt=""
-											class="option__item-img"
-										/>
-										<div class="option__item-text">
-											<p class="option__item-name">Will</p>
-											<p class="option__item-author">Will Smith, Mark Manson</p>
-										</div>
-									</div>
-									<div class="option__item-price">15$</div>
-									<div class="option__item--quantity">
-										<i class="fa-solid fa-minus"></i>
-										<span class="item--quantity">1</span>
-										<i class="fa-solid fa-plus"></i>
-									</div>
-									<div class="option__item-final-price">30$</div>
-								</div>
-							</label>
-							<label class="option__item">
-								<input type="checkbox" class="item-checkbox" />
-								<span class="checkmark"></span>
-								<div class="option__item-row">
-									<div class="option__item-info">
-										<img
-											src="../assets/img/bookofthemonth.jpg"
-											alt=""
-											class="option__item-img"
-										/>
-										<div class="option__item-text">
-											<p class="option__item-name">Will</p>
-											<p class="option__item-author">Will Smith, Mark Manson</p>
-										</div>
-									</div>
-									<div class="option__item-price">15$</div>
-									<div class="option__item--quantity">
-										<i class="fa-solid fa-minus"></i>
-										<span class="item--quantity">1</span>
-										<i class="fa-solid fa-plus"></i>
-									</div>
-									<div class="option__item-final-price">30$</div>
-								</div>
-							</label>
+							</div>
 						</div>
 						<div class="card__checkbox">
 							<div class="card__checkbox-title">Summary</div>
@@ -139,22 +107,36 @@
 								</div>
 								<div class="card__checkbox-item">
 									<div class="card__checkbox-tag"></div>
-									<input
-										type="text"
-										class="card__checkbox-giftcode"
-										placeholder="Enter gift code"
-									/>
-									<div class="button--rounded card__gift-button">Enter</div>
+									<form
+										action="/views/checkout.html"
+										method="get"
+										id="giftcode-form"
+									>
+										<input
+											type="text"
+											class="card__checkbox-giftcode"
+											placeholder="Enter gift code"
+										/>
+									</form>
+									<button
+										type="submit"
+										form="giftcode-form"
+										class="button--rounded card__gift-button"
+									>
+										Enter
+									</button>
 								</div>
 								<div class="card__checkbox-item">
 									<div class="card__checkbox-tag">Total Price</div>
 									<div class="card__checkbox-total-price">$45</div>
 								</div>
-								<a
-									href="./checkout.html"
-									class="button--outline button--rounded card-checkout__button"
-									>Check Out</a
+								<button
+									type="submit"
+									form="giftcode-form"
+									class="button--rounded card-checkout__button"
 								>
+									Check Out
+								</button>
 							</div>
 						</div>
 					</div>
@@ -163,5 +145,6 @@
 		</section>
 		<my-footer></my-footer>
 		<script src="../scripts/load_html.js"></script>
+		<script src="../scripts/edit_quantity.js"></script>
 	</body>
 </html>
